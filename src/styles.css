@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("./assets/css/color-palette.css");
+@import url("./assets/css/typography.css");
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Globals */
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: var(--font);
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: min(90%, 150rem);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
