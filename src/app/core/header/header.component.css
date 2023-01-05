@@ -1,0 +1,23 @@
+mat-toolbar {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  mat-toolbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9;
+    height: 10rem;
+    padding-top: 1rem;
+    flex-direction: row;
+    padding: 1rem 9rem 0 9rem;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

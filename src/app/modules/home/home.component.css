@@ -1,0 +1,12 @@
+@import url(../../../styles.css);
+.map {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 468px) {
+  .map {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

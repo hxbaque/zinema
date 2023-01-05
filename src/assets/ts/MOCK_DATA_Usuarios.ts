@@ -1,9 +1,9 @@
 export const mockDataUsuarios = [
     {
-      cedula: 9000000000,
-      nombres: 'Nombre1 Nombre1',
-      usuario: 'user',
-      correo: 'ejemplo@emial.com',
+      cedula: 0999999999,
+      nombres: 'Fabrizio Ramos',
+      usuario: 'fbrz',
+      correo: 'mauro.ramosm@ug.edu.ec',
       contrasenia: '12345',
     }
 ];
