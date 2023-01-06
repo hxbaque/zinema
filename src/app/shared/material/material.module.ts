@@ -22,6 +22,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSortModule } from '@angular/material/sort';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatStepperModule} from '@angular/material/stepper';
 
 const MaterialComponents = [
 //   FlexLayoutModule,
@@ -42,6 +43,7 @@ const MaterialComponents = [
   MatToolbarModule,
   MatToolbarModule,
   MatChipsModule,
+  MatStepperModule,
 
   MatCheckboxModule,
   MatDatepickerModule,

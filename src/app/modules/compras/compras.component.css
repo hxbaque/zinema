@@ -1,0 +1,17 @@
+.gridxd {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 1rem 0;
+}
+
+.peli {
+  background-color: red;
+  height: 75rem;
+}
+.example-input-wrapper {
+  margin-bottom: 16px;
+}
+
+label {
+  margin-right: 4px;
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { PeliculasServices } from 'src/app/shared/services/peliculas.service';
 
 @Component({
@@ -12,6 +13,10 @@ export class PeliculasDisponibleComponent {
     return this.peliculasServices.peliculasDisponible;
   }
 
-  constructor(private peliculasServices: PeliculasServices) { }
+  constructor(private peliculasServices: PeliculasServices, private router: Router) { }
+
+  compra(id: number){
+    this.router.navigate([`/compras/${id}`]);
+  }
 
 }
