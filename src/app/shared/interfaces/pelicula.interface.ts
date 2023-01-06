@@ -1,8 +1,11 @@
 export interface Pelicula{
-    id: number;
-    nombre: string;
-    descripcion: string;
-    precio: number;
-    genero: string;
-    tipo: string; // Proximo, estreno, preventa
+    id_pelicula      : number,
+    poster           : string,
+    titulo_original  : string,
+    reparto          : string,
+    sinopsis         : string,
+    tiempo_duracion  : number,
+    id_categoria     : number,
+    id_clasificacion : number,
+    id_tipo          : number
 }

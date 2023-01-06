@@ -36,7 +36,16 @@ mat-card-subtitle {
   box-shadow: -2px 4px 19px -4px rgba(145, 145, 145, 1);
 }
 
-.grid {
+.map {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.red {
+  background-color: red;
+  width: 40rem;
+}
+
+.no {
+  display: none;
 }

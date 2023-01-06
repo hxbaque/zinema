@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { Peliculas } from "src/assets/ts/MOCK_DATA_Peliculas";
+import { PeliculasServices } from "src/app/shared/services/peliculas.service";
 
 @Component({
     selector: 'app-pelicula',
@@ -9,9 +9,11 @@ import { Peliculas } from "src/assets/ts/MOCK_DATA_Peliculas";
 
 export class PeliculaComponent{
 
-
-    data = [...Peliculas];
-    constructor(){
+    get peliculas(){
+        return this.peliculasServices.peliculas;
     }
+
+
+    constructor(private peliculasServices: PeliculasServices){}
 }
 // https://api.themoviedb.org/3/discover/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb
