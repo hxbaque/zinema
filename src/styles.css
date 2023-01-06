@@ -41,6 +41,7 @@ h1,
 h2,
 h3 {
   text-align: center;
+  margin: 0;
 }
 
 h1 {
@@ -49,8 +50,61 @@ h1 {
 
 h2 {
   font-size: 3.2rem;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 2.4rem;
+}
+
+/* CARDS */
+.example-card {
+  max-width: 42rem;
+}
+
+.shadow {
+  -webkit-box-shadow: -2px 4px 19px -4px rgba(145, 145, 145, 1);
+  -moz-box-shadow: -2px 4px 19px -4px rgba(145, 145, 145, 1);
+  box-shadow: -2px 4px 19px -4px rgba(145, 145, 145, 1);
+}
+
+.core {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0;
+}
+
+.cards {
+  width: 42rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.mat-card-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mat-card-subtitle {
+  background-color: #919191;
+  padding: 0.2rem 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+.mat-card-img {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-card-actions {
+  width: 20rem;
+  margin: 0 auto;
 }
