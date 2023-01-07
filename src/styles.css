@@ -33,7 +33,7 @@ img {
 }
 
 .container {
-  max-width: min(90%, 150rem);
+  max-width: min(90%, 140rem);
   margin: 0 auto;
 }
 
@@ -74,20 +74,22 @@ h3 {
   grid-template-rows: repeat(3, 1fr);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 0;
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 0;
+  }
 }
 
 .cards {
-  width: 42rem;
+  width: 35rem;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
 
 .mat-card-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 

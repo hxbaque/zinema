@@ -5,6 +5,7 @@ import { Pelicula } from "../interfaces/pelicula.interface";
 @Injectable()
 export class PeliculasServices{
     private _peliculas: Pelicula[] = [...Peliculas];
+
     private _peliculasEstreno: Pelicula[] = [];
     private _peliculasPreventa: Pelicula[] = [];
     private _peliculasDisponible: Pelicula[] = [];
@@ -24,6 +25,7 @@ export class PeliculasServices{
         }
         return this._peliculasEstreno;
     }
+
     get peliculasPreventa(): Pelicula[]{
         for (const i of this._peliculas) {
             if(i.id_tipo === 2){

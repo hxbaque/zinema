@@ -34,7 +34,7 @@ export const Peliculas = [
         tiempo_duracion: 105,
         id_categoria: 6,
         id_clasificacion: 2,
-        id_tipo: 2
+        id_tipo: 2,
     },
     {
         id_pelicula: 2,
