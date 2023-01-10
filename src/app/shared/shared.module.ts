@@ -10,6 +10,8 @@ import { PeliculasDisponibleComponent } from './components/peliculas/peliculas-d
 import { PeliculasProximamenteComponent } from './components/peliculas/peliculas-proximamente/peliculas-proximamente.component';
 import { SnackBarComponent } from './components/snacks/snack-bar/snack-bar.component';
 import { SnackBarServices } from "./services/snack-bar.service";
+import { CarritoSnackComponent } from "./components/carratitos/carrito-snack/carrito-snack.component";
+import { CarritoServices } from "./services/carrito.service";
 
 @NgModule({
     declarations: [
@@ -17,14 +19,16 @@ import { SnackBarServices } from "./services/snack-bar.service";
         PeliculasPreventaComponent,
         PeliculasDisponibleComponent,
         PeliculasProximamenteComponent,
-        SnackBarComponent
+        SnackBarComponent,
+        CarritoSnackComponent
     ],
     exports: [
         PeliculasEstrenoComponent,
         PeliculasPreventaComponent,
         PeliculasDisponibleComponent,
         PeliculasProximamenteComponent,
-        SnackBarComponent
+        SnackBarComponent,
+        CarritoSnackComponent
     ],
     imports:[
         MaterialModule,
@@ -32,7 +36,8 @@ import { SnackBarServices } from "./services/snack-bar.service";
     ],
     providers:[
         PeliculasServices,
-        SnackBarServices
+        SnackBarServices,
+        CarritoServices
     ]
 })
 

@@ -23,6 +23,7 @@ import { MatSortModule } from '@angular/material/sort';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 
@@ -46,6 +47,7 @@ const MaterialComponents = [
   MatToolbarModule,
   MatChipsModule,
   MatStepperModule,
+  MatBadgeModule,
 
   MatCheckboxModule,
   MatDatepickerModule,
