@@ -21,3 +21,17 @@ mat-toolbar {
 .example-spacer {
   flex: 1 1 auto;
 }
+
+a,
+.iniciar {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #ffee00;
+}
+
+.iniciar:hover {
+  background-color: #ffee00;
+}
