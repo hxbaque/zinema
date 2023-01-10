@@ -7,6 +7,7 @@ import { HomeComponent } from "./home/home.component";
 import { StepperComponent } from "./stepper/stepper/stepper.component";
 import { BarComponent } from './bar/bar.component';
 import { CarteleraComponent } from './cartelera/cartelera.component';
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import { CarteleraComponent } from './cartelera/cartelera.component';
     imports: [
         CoreModule,
         SharedModule,
-        MaterialModule
+        MaterialModule,
+        CommonModule
     ]
 })
 

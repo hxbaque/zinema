@@ -10,6 +10,7 @@
             </div>
         </form>
     </mat-step>
+
     <mat-step [stepControl]="secondFormGroup">
         <form [formGroup]="secondFormGroup">
             <ng-template matStepLabel>Cuantos boletos deseas</ng-template>
@@ -22,12 +23,15 @@
             </div>
         </form>
     </mat-step>
+
+    
     <mat-step [stepControl]="secondFormGroup">
         <form [formGroup]="secondFormGroup">
             <ng-template matStepLabel>Selecciona los asientos</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Address" formControlName="secondCtrl" required>
-            </mat-form-field>
+           
+                    <mat-label>Page size</mat-label>
+                    
+                    <input matInput [(ngModel)]="nasientos" type="number" formControlName="secondCtrl" required>
             <div>
                 <button mat-button matStepperPrevious>Back</button>
                 <button mat-button matStepperNext>Next</button>

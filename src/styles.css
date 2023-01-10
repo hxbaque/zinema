@@ -107,11 +107,12 @@ h3 {
 }
 
 .mat-card-subtitle {
-  background-color: #919191;
+  background-color: #30475E;
   padding: 0.2rem 2rem;
   display: inline-block;
   margin-right: 1rem;
   border-radius: 1rem;
+  color: white;
 }
 
 .mat-card-img {
@@ -125,3 +126,9 @@ h3 {
   display: flex;
   justify-content: space-evenly;
 }
+
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
