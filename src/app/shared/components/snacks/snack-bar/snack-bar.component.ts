@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SnackBarServices } from 'src/app/shared/services/snack-bar.service';
 
 @Component({
@@ -6,29 +6,29 @@ import { SnackBarServices } from 'src/app/shared/services/snack-bar.service';
   templateUrl: './snack-bar.component.html',
   styleUrls: ['./snack-bar.component.css']
 })
-export class SnackBarComponent {
+export class SnackBarComponent implements OnInit {
 
-  value: number = 0;
+  value: number[] = [];
 
-  constructor(private snackBarServices: SnackBarServices) { }
+  constructor(private snackBarServices: SnackBarServices) {
+   }
 
   get snackBar(){
     return this.snackBarServices.snacksBar;
   }
 
-  val(){
-    if(!(this.value <= 0)){
-      this.value = this.value - 1
+  ngOnInit(): void {
+    for(let i=0; i <= this.snackBar.length; i++){
+      this.value[i] = 0;
     }
   }
 
   trackByFn(index: number, item: any): number{
-    console.log(index);
     return index;
   }
 
-  cambio(){
-    return 1;
+  adquirir(i: number, value:number){
+    this.value[i] = this.value[i] + value;
   }
 
 

@@ -1,7 +1,9 @@
-.gridxd {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin: 1rem 0;
+@media (min-width: 768px) {
+  .gridcompra {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem 0;
+  }
 }
 
 .peli {

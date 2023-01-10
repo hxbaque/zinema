@@ -1,5 +1,5 @@
 <div class="grid">
-    <div class="cards shadow" *ngFor="let data of snackBar; trackBy: trackByFn">
+    <div class="cards shadow" *ngFor="let data of snackBar; let i = index; trackBy: trackByFn">
         <mat-card class="example-card mat-card">
             <mat-card-title class="mat-card-title">{{data.nombre}}</mat-card-title>
             <div class="mat-card-img">
@@ -9,17 +9,17 @@
             <small>{{data.descripcion}}</small>
             <p>${{data.precio}}.00</p>
             <mat-card-actions class="count">
-                <button (click)="value = value + 1" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+                <button (click)="adquirir(i, 1)" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
                     <mat-icon>add</mat-icon>
                 </button>
                 <mat-form-field class="example-form-field" style="margin: 0 1rem;">
                     <mat-label>Cantidad</mat-label>
-                    <input min="0" autocomplete="off" class="input" matInput type="text" [(ngModel)]="value">
-                    <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=0">
+                    <input disabled min="0" autocomplete="off" class="input" matInput type="text" [(ngModel)]="value[i]">
+                    <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value[i]=0">
                         <mat-icon>close</mat-icon>
                     </button>
                 </mat-form-field>
-                <button (click)="value = value - 1" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+                <button (click)="adquirir(i, -1)" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
                     <mat-icon>remove</mat-icon>
                 </button>
             </mat-card-actions>
