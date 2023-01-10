@@ -11,10 +11,10 @@ export class HeroComponent{
     hero: string[]= ['hero cine', 'hero snack', 'hero promo', 'hero tickets']
 
     anuncio: string[] =[
-        'Los mejores precios siempre con la mejor calidad',
+        'Los mejores precios siempre con la mejor calidad, disfruta en familia o amigos',
         'Los mejores snacks siempres frescos',
         'Martes de promoción para que no te quedes en casa',
-        'Realiza la compra de peliculas en preventa'
+        'Para que no te lo pierdas, realiza la compra de peliculas en preventa'
     ]
 
 }

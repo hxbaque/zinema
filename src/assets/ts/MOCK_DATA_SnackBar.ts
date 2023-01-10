@@ -3,7 +3,7 @@ export const SnackBar = [
         id_snack: 1,
         img: '../../../../../assets/img/snacks/popcorn.jfif',
         nombre: 'CANGUIL GRANDE 130oz',
-        descripcion: '¡Disfruta de un delicioso crocante Canguil saladito de 130 oz! Rellena tu Canguil GRATIS una vez más el día de tu compra. ¡Qué aproveche!"',
+        descripcion: '¡Disfruta de un delicioso crocante Canguil saladito de 130 oz! Rellena tu Canguil GRATIS una vez más el día de tu compra!."',
         precio: 5
     },
     {
@@ -17,7 +17,7 @@ export const SnackBar = [
         id_snack: 3,
         img: '../../../../../assets/img/snacks/popcorn-gaseosas.jfif',
         nombre: 'COMBO POP',
-        descripcion: 'Refrescante gaseosa de 32oz acompañada de un crocante Canguil saladito de 130oz *Rellena tu Canguil GRATIS una vez más el día de tu compra*',
+        descripcion: 'Refrescante gaseosa de 32oz acompañada de un crocante Canguil saladito de 130oz *Rellena tu Canguil GRATIS una vez*',
         precio: 5
     },
     {
@@ -38,7 +38,7 @@ export const SnackBar = [
         id_snack: 5,
         img: '../../../../../assets/img/snacks/agua.jpg',
         nombre: 'Agua',
-        descripcion: 'Disfruta de nuestra deliciosa agua Dasani sin o con gas, helada o sin helar en el cine. ¡Es la elección perfecta para acompañar tu comida! ¡Ven y consigue la tuya hoy!',
+        descripcion: 'Disfruta de nuestra deliciosa agua Dasani sin o con gas, helada o sin helar en el cine.',
         precio: 1
     },
 ]

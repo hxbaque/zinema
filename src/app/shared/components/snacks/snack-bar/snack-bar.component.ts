@@ -22,5 +22,14 @@ export class SnackBarComponent {
     }
   }
 
+  trackByFn(index: number, item: any): number{
+    console.log(index);
+    return index;
+  }
+
+  cambio(){
+    return 1;
+  }
+
 
 }

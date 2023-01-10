@@ -17,7 +17,7 @@ export class PeliculasServices{
 
     get peliculasEstreno(): Pelicula[]{
         for (const i of this._peliculas) {
-            if(i.id_tipo === 1){
+            if(i.id_tipo === 'Estreno'){
                 if(!(this._peliculasEstreno.includes(i))){
                     this._peliculasEstreno.push(i)
                 }
@@ -28,7 +28,7 @@ export class PeliculasServices{
 
     get peliculasPreventa(): Pelicula[]{
         for (const i of this._peliculas) {
-            if(i.id_tipo === 2){
+            if(i.id_tipo === 'Preventa'){
                 if(!(this._peliculasPreventa.includes(i))){
                     this._peliculasPreventa.push(i)
                 }
@@ -39,7 +39,7 @@ export class PeliculasServices{
 
     get peliculasDisponible(): Pelicula[]{
         for (const i of this._peliculas) {
-            if(i.id_tipo === 3){
+            if(i.id_tipo === 'Disponible'){
                 if(!(this._peliculasDisponible.includes(i))){
                     this._peliculasDisponible.push(i)
                 }
@@ -50,7 +50,7 @@ export class PeliculasServices{
 
     get peliculasProximamente(): Pelicula[]{
         for (const i of this._peliculas) {
-            if(i.id_tipo === 4){
+            if(i.id_tipo === 'Próximos estrenos'){
                 if(!(this._peliculasProximo.includes(i))){
                     this._peliculasProximo.push(i)
                 }
