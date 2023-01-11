@@ -1,0 +1,33 @@
+<mat-card>
+    <div style="text-align:center;">
+        <mat-card-title>Método de facturación</mat-card-title>
+    </div>   
+    <br>
+    <form [formGroup]="pagoNuevo">
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Nombre Completo" formControlName="nombres">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Correo eléctronico" formControlName="correo">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Número de teléfono" formControlName="numero">
+        </mat-form-field>
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Nombre como aparece en la tarjeta" formControlName="nombret">
+        </mat-form-field>
+    
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Número de tarjeta" formControlName="tarjeta">
+        </mat-form-field>
+    
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Codigo de seguridad" formControlName="codigo">
+        </mat-form-field>
+        <div>
+        <button mat-raised-button [disabled] = "!pagoNuevo.valid" (click)="onSubmit()">Aceptar</button>       
+        </div>
+    </form>  
+</mat-card>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SnackBarServices } from 'src/app/shared/services/snack-bar.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-snack-bar',
@@ -10,7 +11,7 @@ export class SnackBarComponent implements OnInit {
 
   value: number[] = [];
 
-  constructor(private snackBarServices: SnackBarServices) {
+  constructor(private snackBarServices: SnackBarServices, private router:Router) {
    }
 
   get snackBar(){
@@ -30,6 +31,8 @@ export class SnackBarComponent implements OnInit {
   adquirir(i: number, value:number){
     this.value[i] = this.value[i] + value;
   }
-
+  addCarrito(){
+    this.router.navigate(['/pago']);
+  }
 
 }

@@ -9,4 +9,13 @@ export class CarritoServices{
         console.log("Work");
        return []
     }
+    addCarrito(){
+        
+    }
+    removerCarrito(){
+
+    }
+    clearCarrito(){
+      
+    }
 }
