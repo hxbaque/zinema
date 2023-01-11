@@ -1,5 +1,8 @@
 import { Component } from "@angular/core";
 import { CarritoServices } from "src/app/shared/services/carrito.service";
+import { PagoComponent } from "src/app/modules/pago/pago.component";
+import { MatDialog } from "@angular/material/dialog";
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'app-carrito-snack',
@@ -13,9 +16,12 @@ export class CarritoSnackComponent{
     this.hidden = !this.hidden;
     }
 
-    constructor(private carritoServices: CarritoServices){}
+    constructor(private carritoServices: CarritoServices, public router:Router, private dialog:MatDialog){}
 
     fn(){
         this.carritoServices.carrito
+        this.dialog.open(PagoComponent, {
+            width: '50%',
+          })
     }
 }
