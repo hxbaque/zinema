@@ -8,6 +8,7 @@ import { StepperComponent } from "./stepper/stepper/stepper.component";
 import { BarComponent } from './bar/bar.component';
 import { CarteleraComponent } from './cartelera/cartelera.component';
 import { CommonModule } from "@angular/common";
+import { PagoComponent } from "./pago/pago.component";
 
 @NgModule({
     declarations: [
@@ -15,11 +16,13 @@ import { CommonModule } from "@angular/common";
         ComprasComponent,
         StepperComponent,
         BarComponent,
-        CarteleraComponent
+        CarteleraComponent,
+        PagoComponent
     ],
     exports: [
         HomeComponent,
-        ComprasComponent
+        ComprasComponent,
+        PagoComponent    
     ],
     imports: [
         CoreModule,
