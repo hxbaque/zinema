@@ -16,14 +16,15 @@ export class ComprasComponent implements OnInit{
     }
     
     id_pelicula:any;
-    infopeli=null;
+    infopeli:any;
 
     ngOnInit() {
          this.id_pelicula=this.route.snapshot.paramMap.get("id");
 
          for( let i of this.pelis.peliculas){
             if(i.id_pelicula==this.id_pelicula){
-                this.infopeli
+                this.infopeli= i;
+
             }
 
          }
