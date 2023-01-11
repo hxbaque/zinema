@@ -39,11 +39,14 @@ export class PagoComponent implements OnInit {
     };
 
     this.dialogRef.close(); 
-    this.redirectTo('/pago', objToSend);
+    this.redirectTo('/snack-bar', objToSend);
   }
   redirectTo(uri:string, objToSend:NavigationExtras){
     this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
     this.router.navigate([uri],{ state: { datosCliente: objToSend}}));
+  }
+  salir(){
+    this.dialogRef.close();
   }
 
 }

@@ -4,30 +4,44 @@
     </div>   
     <br>
     <form [formGroup]="pagoNuevo">
+        <div>
+        <mat-icon>face</mat-icon>
         <mat-form-field class="campos-field">
             <input matInput placeholder="Nombre Completo" formControlName="nombres">
-        </mat-form-field>
+        </mat-form-field></div>
 
+        <div>
+        <mat-icon> email</mat-icon>
         <mat-form-field class="campos-field">
             <input matInput placeholder="Correo eléctronico" formControlName="correo">
-        </mat-form-field>
+        </mat-form-field></div>
 
+        <div>
+        <mat-icon>settings_phone</mat-icon>
         <mat-form-field class="campos-field">
             <input matInput placeholder="Número de teléfono" formControlName="numero">
-        </mat-form-field>
+        </mat-form-field></div>
+
+        <div>
+        <mat-icon>picture_in_picture</mat-icon>
         <mat-form-field class="campos-field">
             <input matInput placeholder="Nombre como aparece en la tarjeta" formControlName="nombret">
-        </mat-form-field>
-    
+        </mat-form-field></div>
+
+        <div>
+        <mat-icon>payment</mat-icon>
         <mat-form-field class="campos-field">
             <input matInput placeholder="Número de tarjeta" formControlName="tarjeta">
-        </mat-form-field>
-    
+        </mat-form-field></div>
+
+        <div>
+        <mat-icon>lock</mat-icon>
         <mat-form-field class="campos-field">
             <input matInput placeholder="Codigo de seguridad" formControlName="codigo">
-        </mat-form-field>
+        </mat-form-field></div>
         <div>
-        <button mat-raised-button [disabled] = "!pagoNuevo.valid" (click)="onSubmit()">Aceptar</button>       
+        <button mat-raised-button [disabled] = "!pagoNuevo.valid" (click)="onSubmit()">Aceptar</button>
+        <button mat-raised-button (click)="salir()">Cerrar</button>       
         </div>
     </form>  
 </mat-card>
