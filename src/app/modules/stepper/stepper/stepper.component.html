@@ -1,15 +1,116 @@
 <mat-vertical-stepper [linear]="true" #stepper>
+    
     <mat-step [stepControl]="firstFormGroup">
         <form [formGroup]="firstFormGroup">
             <ng-template matStepLabel>Selecciona una fecha y el horario</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-            </mat-form-field>
+          
+            <div class="sala">
+                <h3>Horarios</h3> 
+                <mat-tab-group>
+                    <mat-tab>
+                      <ng-template mat-tab-label>
+                        <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+                        Dom 25
+                      </ng-template>
+                      <mat-chip-list aria-label="Fish selection">
+                        <mat-chip>11:00</mat-chip>
+                        <mat-chip>12:30</mat-chip>
+                        <mat-chip color="accent" selected    >13:00</mat-chip>
+                        <mat-chip color="warn">15:30</mat-chip>
+                        <mat-chip>17:30</mat-chip>
+                        <mat-chip>18:30</mat-chip>
+                      </mat-chip-list>
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label>
+                          <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+                          Lun 26
+                        </ng-template>
+                        <mat-chip-list aria-label="Fish selection">
+                          <mat-chip>11:00</mat-chip>
+                          <mat-chip>12:30</mat-chip>
+                          <mat-chip color="accent" >13:00</mat-chip>
+                          <mat-chip color="warn">15:30</mat-chip>
+                          <mat-chip>17:30</mat-chip>
+                          <mat-chip>18:30</mat-chip>
+                        </mat-chip-list>
+                      </mat-tab>
+                      
+                      <mat-tab>
+                        <ng-template mat-tab-label>
+                          <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+                          Mar 27
+                        </ng-template>
+                        <mat-chip-list aria-label="Fish selection">
+                          <mat-chip>11:00</mat-chip>
+                          <mat-chip>12:30</mat-chip>
+                          <mat-chip color="accent" selected>13:00</mat-chip>
+                          <mat-chip color="warn">15:30</mat-chip>
+                          <mat-chip>17:30</mat-chip>
+                          <mat-chip>18:30</mat-chip>
+                        </mat-chip-list>
+                      </mat-tab>
+                      
+                      <mat-tab>
+                        <ng-template mat-tab-label>
+                          <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+                          Mie 28
+                        </ng-template>
+                        
+                        <mat-chip-list aria-label="Fish selection">
+                          <mat-chip>11:00</mat-chip>
+                          <mat-chip>12:30</mat-chip>
+                          <mat-chip color="accent" selected>13:00</mat-chip>
+                          <mat-chip color="warn">15:30</mat-chip>
+                          <mat-chip>17:30</mat-chip>
+                          <mat-chip>18:30</mat-chip>
+                        </mat-chip-list>
+                      </mat-tab>
+                     
+                      <mat-tab>
+                        <ng-template mat-tab-label>
+                          <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+                          Jue 29
+                        </ng-template>
+                        <mat-chip-list aria-label="Fish selection">
+                          <mat-chip>11:00</mat-chip>
+                          <mat-chip>12:30</mat-chip>
+                          <mat-chip color="accent" selected>13:00</mat-chip>
+                          <mat-chip color="warn">15:30</mat-chip>
+                          <mat-chip>17:30</mat-chip>
+                          <mat-chip>18:30</mat-chip>
+                        </mat-chip-list>
+                      </mat-tab>
+
+                      <mat-tab>
+                        <ng-template mat-tab-label>
+                          <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+                          Vie 30
+                        </ng-template>
+                        <mat-chip-list aria-label="Fish selection">
+                          <mat-chip>11:00</mat-chip>
+                          <mat-chip>12:30</mat-chip>
+                          <mat-chip color="accent">13:00</mat-chip>
+                          <mat-chip color="warn">15:30</mat-chip>
+                          <mat-chip>17:30</mat-chip>
+                          <mat-chip>18:30</mat-chip>
+                        </mat-chip-list>
+                      </mat-tab>
+                     
+                     
+                    
+                    
+                  </mat-tab-group>
+                 <br>
+            </div>
             <div>
                 <button mat-button matStepperNext>Next</button>
             </div>
-        </form>
+        </form>    
     </mat-step>
+
+
+
 
     <mat-step [stepControl]="secondFormGroup">
         <form [formGroup]="secondFormGroup">
