@@ -82,6 +82,15 @@ h3 {
 @media (min-width: 768px) {
   .grid {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width: 1140px) {
+  .grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 2rem 0;
     width: 125rem;
@@ -107,7 +116,7 @@ h3 {
 }
 
 .mat-card-subtitle {
-  background-color: #30475E;
+  background-color: #30475e;
   padding: 0.2rem 2rem;
   display: inline-block;
   margin-right: 1rem;
@@ -127,11 +136,20 @@ h3 {
   justify-content: space-evenly;
 }
 
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

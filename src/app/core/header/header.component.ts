@@ -1,4 +1,7 @@
 import { Component } from "@angular/core";
+import { MatDialog } from '@angular/material/dialog';
+import { LoginComponent } from "src/app/modules/login/login.component";
+
 
 @Component({
     selector: 'app-header',
@@ -7,5 +10,11 @@ import { Component } from "@angular/core";
 })
 
 export class HeaderComponent{
-    btnName: string = 'Iniciar Sesión'
+
+    constructor(private dialog:MatDialog){}
+
+    openDialogSesion(){
+        console.log('log')
+        this.dialog.open(LoginComponent)
+    }
 }
