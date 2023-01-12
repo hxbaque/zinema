@@ -24,10 +24,6 @@ export class SnackBarComponent implements OnInit {
     }
   }
 
-  trackByFn(index: number, item: any): number{
-    return index;
-  }
-
   adquirir(i: number, value:number){
     this.value[i] = this.value[i] + value;
   }

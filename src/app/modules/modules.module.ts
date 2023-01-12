@@ -9,6 +9,8 @@ import { BarComponent } from './bar/bar.component';
 import { CarteleraComponent } from './cartelera/cartelera.component';
 import { CommonModule } from "@angular/common";
 import { PagoComponent } from "./pago/pago.component";
+import { LoginComponent } from "./login/login.component";
+import { RegistrarComponent } from "./registrar/registrar.component";
 
 @NgModule({
     declarations: [
@@ -17,12 +19,14 @@ import { PagoComponent } from "./pago/pago.component";
         StepperComponent,
         BarComponent,
         CarteleraComponent,
-        PagoComponent
+        PagoComponent,
+        LoginComponent,
+        RegistrarComponent
     ],
     exports: [
         HomeComponent,
         ComprasComponent,
-        PagoComponent    
+        PagoComponent
     ],
     imports: [
         CoreModule,
