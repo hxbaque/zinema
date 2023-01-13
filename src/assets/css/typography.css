@@ -1,4 +1,5 @@
 :root {
   /* Fonts */
-  --font: "Roboto", sans-serif;
+  --font-staatliches: "Staatliches", cursive;
+  --font-comfortaa: "Comfortaa", cursive;
 }
