@@ -12,6 +12,8 @@ export class StepperComponent{
 
   nasientos=1;
   pageIndex=0;
+
+
   constructor(private _formBuilder: FormBuilder) {}
 
   

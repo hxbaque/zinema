@@ -9,9 +9,11 @@
             <small>{{data.descripcion}}</small>
             <p>${{data.precio}}.00</p>
             <mat-card-actions class="count">
+                
                 <button (click)="adquirir(i, -1)" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
                     <mat-icon>remove</mat-icon>
                 </button>
+                
                 <mat-form-field class="example-form-field" style="margin: 0 1rem;">
                     <mat-label>Cantidad</mat-label>
                     <input readonly min="0" autocomplete="off" class="input" matInput type="text" [(ngModel)]="value[i]">
@@ -19,6 +21,9 @@
                         <mat-icon>close</mat-icon>
                     </button>
                 </mat-form-field>
+
+
+
                 <button (click)="adquirir(i, 1)" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
                     <mat-icon>add</mat-icon>
                 </button>
