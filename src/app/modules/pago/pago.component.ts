@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { NavigationExtras, Router } from '@angular/router';
 import {MatSelectModule} from '@angular/material/select';
+import { AdinfoComponent } from '../adinfo/adinfo.component';
 
 @Component({
   selector: 'app-pago',
@@ -11,7 +12,7 @@ import {MatSelectModule} from '@angular/material/select';
 })
 export class PagoComponent implements OnInit {
 
-  constructor(private router: Router, private dialogRef: MatDialogRef<PagoComponent>){}
+  constructor(private router: Router,private dialog:MatDialog){}
   selected = 'option2';
   
   ngOnInit(): void {
@@ -38,15 +39,15 @@ export class PagoComponent implements OnInit {
       fragment: 'top' 
     };
 
-    this.dialogRef.close(); 
     this.redirectTo('/snack-bar', objToSend);
   }
   redirectTo(uri:string, objToSend:NavigationExtras){
     this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
     this.router.navigate([uri],{ state: { datosCliente: objToSend}}));
   }
-  salir(){
-    this.dialogRef.close();
+  cancelar(){
+      console.log('log')
+      this.dialog.open(AdinfoComponent)
   }
-
+  
 }

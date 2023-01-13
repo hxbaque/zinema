@@ -12,6 +12,7 @@ import { PagoComponent } from "./pago/pago.component";
 import { LoginComponent } from "./login/login.component";
 import { RegistrarComponent } from "./registrar/registrar.component";
 import { PromocionesComponent } from "./promociones/promociones.component";
+import { AdinfoComponent } from './adinfo/adinfo.component';
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import { PromocionesComponent } from "./promociones/promociones.component";
         PagoComponent,
         LoginComponent,
         RegistrarComponent,
-        PromocionesComponent
+        PromocionesComponent,
+        AdinfoComponent
     ],
     exports: [
         HomeComponent,
