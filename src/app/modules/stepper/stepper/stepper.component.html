@@ -1,198 +1,168 @@
-<mat-vertical-stepper [linear]="true" #stepper>
-    
-    <mat-step [stepControl]="firstFormGroup">
-        <form [formGroup]="firstFormGroup">
-            <ng-template matStepLabel>Selecciona una fecha y el horario</ng-template>
-          
-            <div class="sala">
-                <h3>Horarios</h3> 
-                <mat-tab-group>
-                    <mat-tab>
-                      <ng-template mat-tab-label>
-                        <mat-icon class="example-tab-icon">calendar_today</mat-icon>
-                        Dom 25
-                      </ng-template>
-                      <mat-chip-list aria-label="Fish selection">
-                        <mat-chip>11:00</mat-chip>
-                        <mat-chip>12:30</mat-chip>
-                        <mat-chip color="accent" selected    >13:00</mat-chip>
-                        <mat-chip color="warn">15:30</mat-chip>
-                        <mat-chip>17:30</mat-chip>
-                        <mat-chip>18:30</mat-chip>
-                      </mat-chip-list>
-                    </mat-tab>
-                    <mat-tab>
-                        <ng-template mat-tab-label>
-                          <mat-icon class="example-tab-icon">calendar_today</mat-icon>
-                          Lun 26
-                        </ng-template>
-                        <mat-chip-list aria-label="Fish selection">
-                          <mat-chip>11:00</mat-chip>
-                          <mat-chip>12:30</mat-chip>
-                          <mat-chip color="accent" >13:00</mat-chip>
-                          <mat-chip color="warn">15:30</mat-chip>
-                          <mat-chip>17:30</mat-chip>
-                          <mat-chip>18:30</mat-chip>
-                        </mat-chip-list>
-                      </mat-tab>
-                      
-                      <mat-tab>
-                        <ng-template mat-tab-label>
-                          <mat-icon class="example-tab-icon">calendar_today</mat-icon>
-                          Mar 27
-                        </ng-template>
-                        <mat-chip-list aria-label="Fish selection">
-                          <mat-chip>11:00</mat-chip>
-                          <mat-chip>12:30</mat-chip>
-                          <mat-chip color="accent" selected>13:00</mat-chip>
-                          <mat-chip color="warn">15:30</mat-chip>
-                          <mat-chip>17:30</mat-chip>
-                          <mat-chip>18:30</mat-chip>
-                        </mat-chip-list>
-                      </mat-tab>
-                      
-                      <mat-tab>
-                        <ng-template mat-tab-label>
-                          <mat-icon class="example-tab-icon">calendar_today</mat-icon>
-                          Mie 28
-                        </ng-template>
-                        
-                        <mat-chip-list aria-label="Fish selection">
-                          <mat-chip>11:00</mat-chip>
-                          <mat-chip>12:30</mat-chip>
-                          <mat-chip color="accent" selected>13:00</mat-chip>
-                          <mat-chip color="warn">15:30</mat-chip>
-                          <mat-chip>17:30</mat-chip>
-                          <mat-chip>18:30</mat-chip>
-                        </mat-chip-list>
-                      </mat-tab>
-                     
-                      <mat-tab>
-                        <ng-template mat-tab-label>
-                          <mat-icon class="example-tab-icon">calendar_today</mat-icon>
-                          Jue 29
-                        </ng-template>
-                        <mat-chip-list aria-label="Fish selection">
-                          <mat-chip>11:00</mat-chip>
-                          <mat-chip>12:30</mat-chip>
-                          <mat-chip color="accent" selected>13:00</mat-chip>
-                          <mat-chip color="warn">15:30</mat-chip>
-                          <mat-chip>17:30</mat-chip>
-                          <mat-chip>18:30</mat-chip>
-                        </mat-chip-list>
-                      </mat-tab>
+<mat-vertical-stepper #stepper>
+  <!-- [linear]="true" -->
 
-                      <mat-tab>
-                        <ng-template mat-tab-label>
-                          <mat-icon class="example-tab-icon">calendar_today</mat-icon>
-                          Vie 30
-                        </ng-template>
-                        <mat-chip-list aria-label="Fish selection">
-                          <mat-chip>11:00</mat-chip>
-                          <mat-chip>12:30</mat-chip>
-                          <mat-chip color="accent">13:00</mat-chip>
-                          <mat-chip color="warn">15:30</mat-chip>
-                          <mat-chip>17:30</mat-chip>
-                          <mat-chip>18:30</mat-chip>
-                        </mat-chip-list>
-                      </mat-tab>
-                     
-                     
-                    
-                    
-                  </mat-tab-group>
-                 <br>
-            </div>
-            <div>
-                <button mat-button matStepperNext>Next</button>
-            </div>
-        </form>    
-    </mat-step>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Selecciona una fecha y el horario</ng-template>
+
+      <div>
+        <h3>Horarios</h3>
+        <mat-tab-group>
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+              Dom 25
+            </ng-template>
+            <mat-chip-list>
+              <mat-chip>11:00</mat-chip>
+              <mat-chip>12:30</mat-chip>
+              <mat-chip>13:00</mat-chip>
+              <mat-chip>15:30</mat-chip>
+              <mat-chip>17:30</mat-chip>
+              <mat-chip>18:30</mat-chip>
+            </mat-chip-list>
+          </mat-tab>
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+              Lun 26
+            </ng-template>
+            <mat-chip-list>
+              <mat-chip>11:00</mat-chip>
+              <mat-chip>12:30</mat-chip>
+              <mat-chip>13:00</mat-chip>
+              <mat-chip>15:30</mat-chip>
+              <mat-chip>17:30</mat-chip>
+              <mat-chip>18:30</mat-chip>
+            </mat-chip-list>
+          </mat-tab>
+
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+              Mar 27
+            </ng-template>
+            <mat-chip-list>
+              <mat-chip>11:00</mat-chip>
+              <mat-chip>12:30</mat-chip>
+              <mat-chip>13:00</mat-chip>
+              <mat-chip>15:30</mat-chip>
+              <mat-chip>17:30</mat-chip>
+              <mat-chip>18:30</mat-chip>
+            </mat-chip-list>
+          </mat-tab>
+
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+              Mie 28
+            </ng-template>
+
+            <mat-chip-list>
+              <mat-chip>11:00</mat-chip>
+              <mat-chip>12:30</mat-chip>
+              <mat-chip>13:00</mat-chip>
+              <mat-chip>15:30</mat-chip>
+              <mat-chip>17:30</mat-chip>
+              <mat-chip>18:30</mat-chip>
+            </mat-chip-list>
+          </mat-tab>
+
+        </mat-tab-group>
+        <br>
+      </div>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <h3>Selecciones la cantidad</h3>
+      <ng-template matStepLabel>Número de boletos</ng-template>
+      <mat-form-field appearance="fill">
+        <mat-label>Cantidad</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
 
 
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Selecciona los asientos</ng-template>
 
+      <h3>Selecciona tu asiento en el teatro</h3>
+      <div class="pantalla"><mat-icon>cast</mat-icon>
+        <h3>PANTALLA</h3>
+      </div>
+      <br>
+      <div class="teatro">
+        <button *ngFor="let puesto of asientos; let i = index" mat-stroked-button class="puesto"><mat-icon>event_seat
+          </mat-icon> {{puesto}}</button>
+      </div>
+      <br>
 
-    <mat-step [stepControl]="secondFormGroup">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Cuantos boletos deseas</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Address" formControlName="secondCtrl" required>
-            </mat-form-field>
-            <div>
-                <button mat-button matStepperPrevious>Back</button>
-                <button mat-button matStepperNext>Next</button>
-            </div>
-        </form>
-    </mat-step>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
 
-    
-    <mat-step [stepControl]="secondFormGroup">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Selecciona los asientos</ng-template>
-           
-                    <mat-label>Page size</mat-label>
-                    
-                    <input matInput [(ngModel)]="nasientos" type="number" formControlName="secondCtrl" required>
-            <div>
-                <button mat-button matStepperPrevious>Back</button>
-                <button mat-button matStepperNext>Next</button>
-            </div>
-        </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>SnackBar</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Address" formControlName="secondCtrl" required>
-            </mat-form-field>
-            <div>
-                <button mat-button matStepperPrevious>Back</button>
-                <button mat-button matStepperNext>Next</button>
-            </div>
-        </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Resumen de la compra</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Address" formControlName="secondCtrl" required>
-            </mat-form-field>
-            <div>
-                <button mat-button matStepperPrevious>Back</button>
-                <button mat-button matStepperNext>Next</button>
-            </div>
-        </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Pago</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Address" formControlName="secondCtrl" required>
-            </mat-form-field>
-            <div>
-                <button mat-button matStepperPrevious>Back</button>
-                <button mat-button matStepperNext>Next</button>
-            </div>
-        </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Selecciona el lugar</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Address" formControlName="secondCtrl" required>
-            </mat-form-field>
-            <div>
-                <button mat-button matStepperPrevious>Back</button>
-                <button mat-button matStepperNext>Next</button>
-            </div>
-        </form>
-    </mat-step>
-    <mat-step>
-        <ng-template matStepLabel>Done</ng-template>
-        You are now done.
-        <div>
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button (click)="stepper.reset()">Reset</button>
-        </div>
-    </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>SnackBar</ng-template>
+      <div class="caja">
+        <app-snack-bar></app-snack-bar>
+      </div>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]=" secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Resumen de la compra</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="secondCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Pago</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="secondCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
 </mat-vertical-stepper>
