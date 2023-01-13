@@ -1,39 +1,11 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@Sprogramdor 
-FbrzRM
-/
-zinema
-Public
-Fork your own copy of FbrzRM/zinema
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-zinema/src/app/modules/registrar/registrar.component.html
-@FbrzRM
-FbrzRM Login, registro, footer
-Latest commit ec88fda 7 hours ago
- History
- 1 contributor
-118 lines (108 sloc)  6.48 KB
+
 
 <section class="container">
     <h2 style="margin-top: 3rem;">Registro</h2>
     <hr>
     <form class="example-form shadow">
         <fieldset class="fieldset">
-            <legend>Información personal</legend>
+            <div class="divLegend" > <legend>Información personal</legend></div>
 
             <table class="example-full-width" cellspacing="0">
                 <tr>
@@ -52,7 +24,7 @@ Latest commit ec88fda 7 hours ago
                             </mat-error>
                         </mat-form-field></td>
                 </tr>
-              
+                <tr class="separador"></tr>
                 <tr>
 
                     <td>
@@ -80,7 +52,7 @@ Latest commit ec88fda 7 hours ago
                 </td>
 
                 </tr>
-               
+                <tr class="separador"></tr>
 
             </table>
             
@@ -108,7 +80,10 @@ Latest commit ec88fda 7 hours ago
                             </mat-error>
                         </mat-form-field></td>
                 </tr>
+                <tr class="separador"></tr>
             </table>
+
+            <div class="divLegend" > <legend>E-mail de acceso</legend></div>
             <mat-form-field class="example-full-width">
                 <mat-label>Email</mat-label>
                 <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
@@ -165,18 +140,3 @@ Latest commit ec88fda 7 hours ago
 
     </form>
 </section>
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-zinema/registrar.component.html at test · FbrzRM/zinema

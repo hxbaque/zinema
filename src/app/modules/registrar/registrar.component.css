@@ -31,3 +31,17 @@ tr {
     display: table-row;
   }
 }
+
+.separador{
+  height: 30px;
+}
+
+.separadordatos{
+  height: 60px;
+  background-color: black;
+}
+
+.divLegend{
+  background-color: rgb(39, 39, 39);
+   color: white;
+}
