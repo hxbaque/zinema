@@ -4,6 +4,13 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: var(--font-comfortaa) !important;
+}
+
+mat-form-field,
+mat-vertical-stepper,
+mat-card {
+  font-family: var(--font-comfortaa) !important;
 }
 
 *,
@@ -17,7 +24,6 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.5;
-  font-family: var(--font);
 }
 
 p {
@@ -40,9 +46,17 @@ img {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+.mat-tab-label-content,
+.mat-button-wrapper {
   text-align: center;
   margin: 0;
+  font-family: var(--font-staatliches);
+}
+
+.mat-button-wrapper {
+  font-size: 2rem;
 }
 
 h1 {
@@ -56,6 +70,10 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
+}
+
+h4 {
+  text-transform: uppercase;
 }
 
 /* CARDS */
@@ -134,22 +152,4 @@ h3 {
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
