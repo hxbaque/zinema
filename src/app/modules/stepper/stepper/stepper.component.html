@@ -7,13 +7,14 @@
             <div class="sala">
                 <h3>Horarios</h3> 
                 <mat-tab-group>
-                    <mat-tab>
+
+                    <mat-tab >
                       <ng-template mat-tab-label>
                         <mat-icon class="example-tab-icon">calendar_today</mat-icon>
                         Dom 25
                       </ng-template>
-                      <mat-chip-list aria-label="Fish selection">
-                        <mat-chip>11:00</mat-chip>
+                      <mat-chip-list aria-label="Fish selection" formControlName="firstCtrl">
+                        <mat-chip [selectable]="true" (click)="0">11:00</mat-chip>
                         <mat-chip>12:30</mat-chip>
                         <mat-chip color="accent" selected    >13:00</mat-chip>
                         <mat-chip color="warn">15:30</mat-chip>
@@ -21,6 +22,7 @@
                         <mat-chip>18:30</mat-chip>
                       </mat-chip-list>
                     </mat-tab>
+                   
                     <mat-tab>
                         <ng-template mat-tab-label>
                           <mat-icon class="example-tab-icon">calendar_today</mat-icon>
