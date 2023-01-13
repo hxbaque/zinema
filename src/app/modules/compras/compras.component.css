@@ -1,32 +1,32 @@
-@media (min-width: 768px) {
-  .gridcompra {
+.compra {
+  display: block;
+}
+@media (min-width: 1140px) {
+  .compra {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 1rem 0;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 2rem;
   }
 }
 
-.peli {
-  background-color: rgb(252, 252, 252);
-  height: auto;
-  max-width: 367px;
-  min-width: 366px;
-  box-shadow: 0px 1px 9px 0px #999999;
-  margin-right: 100px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
+mat-divider {
+  margin: 1.5rem auto;
+  width: 90%;
 }
 
-.example-input-wrapper {
-  margin-bottom: 16px;
+.pelicula_info {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
-label {
-  margin-right: 4px;
+p {
+  margin: 0;
+  text-align: center;
 }
 
-.fontpeli {
-  font-family: Roboto;
-  color: rgb(69, 69, 69);
+.precio {
+  color: red;
+  font-weight: 700;
 }

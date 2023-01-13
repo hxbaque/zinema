@@ -38,7 +38,7 @@ export const SnackBar = [
         id_snack: 5,
         img: '../../../../../assets/img/snacks/agua.jpg',
         nombre: 'Agua',
-        descripcion: 'Disfruta de nuestra deliciosa agua Dasani sin o con gas, helada o sin helar en el cine.',
+        descripcion: 'Disfruta de nuestra deliciosa agua Dasani sin o con gas, helada o sin helar en el cine. No te lo puedes perder',
         precio: 1
     },
 ]
