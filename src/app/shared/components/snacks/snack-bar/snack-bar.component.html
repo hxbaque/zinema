@@ -14,7 +14,7 @@
                 </button>
                 <mat-form-field class="example-form-field" style="margin: 0 1rem;">
                     <mat-label>Cantidad</mat-label>
-                    <input disabled min="0" autocomplete="off" class="input" matInput type="text" [(ngModel)]="value[i]">
+                    <input readonly min="0" autocomplete="off" class="input" matInput type="text" [(ngModel)]="value[i]">
                     <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value[i]=0">
                         <mat-icon>close</mat-icon>
                     </button>
