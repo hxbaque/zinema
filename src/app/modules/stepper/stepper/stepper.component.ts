@@ -12,11 +12,23 @@ export class StepperComponent{
 
   nasientos=1;
   pageIndex=0;
+
+
   constructor(private _formBuilder: FormBuilder) {}
 
   
   firstFormGroup: FormGroup = this._formBuilder.group({firstCtrl: ['', Validators.required]});
   secondFormGroup: FormGroup = this._formBuilder.group({secondCtrl: ['']});
   thirdFormGroup: FormGroup = this._formBuilder.group({thirdCtrl: ['']});
+
+horas= []
+
+
+
+
+
+
+
+
 
 }

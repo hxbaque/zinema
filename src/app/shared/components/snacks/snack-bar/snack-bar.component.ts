@@ -26,7 +26,20 @@ export class SnackBarComponent implements OnInit {
 
   adquirir(i: number, value:number){
     this.value[i] = this.value[i] + value;
+
+    if(this.value[i] < 0){
+      this.value[i]=0;
+    }
+
+    if(this.value[i] > 10){
+      this.value[i]=10;
+    }
+
+
+
   }
+
+
   addCarrito(){
     this.router.navigate(['/pago']);
   }
