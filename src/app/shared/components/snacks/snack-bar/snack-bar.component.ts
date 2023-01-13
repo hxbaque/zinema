@@ -34,9 +34,6 @@ export class SnackBarComponent implements OnInit {
     if(this.value[i] > 10){
       this.value[i]=10;
     }
-
-
-
   }
 
 

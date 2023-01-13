@@ -11,6 +11,7 @@ import { CommonModule } from "@angular/common";
 import { PagoComponent } from "./pago/pago.component";
 import { LoginComponent } from "./login/login.component";
 import { RegistrarComponent } from "./registrar/registrar.component";
+import { PromocionesComponent } from "./promociones/promociones.component";
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { RegistrarComponent } from "./registrar/registrar.component";
         CarteleraComponent,
         PagoComponent,
         LoginComponent,
-        RegistrarComponent
+        RegistrarComponent,
+        PromocionesComponent
     ],
     exports: [
         HomeComponent,

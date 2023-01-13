@@ -12,6 +12,7 @@ import { SnackBarComponent } from './components/snacks/snack-bar/snack-bar.compo
 import { SnackBarServices } from "./services/snack-bar.service";
 import { CarritoSnackComponent } from "./components/carratitos/carrito-snack/carrito-snack.component";
 import { CarritoServices } from "./services/carrito.service";
+import { SnackRowComponent } from "./components/snacks/snack-row/snack-row.component";
 
 @NgModule({
     declarations: [
@@ -20,6 +21,7 @@ import { CarritoServices } from "./services/carrito.service";
         PeliculasDisponibleComponent,
         PeliculasProximamenteComponent,
         SnackBarComponent,
+        SnackRowComponent,
         CarritoSnackComponent
     ],
     exports: [
@@ -28,6 +30,7 @@ import { CarritoServices } from "./services/carrito.service";
         PeliculasDisponibleComponent,
         PeliculasProximamenteComponent,
         SnackBarComponent,
+        SnackRowComponent,
         CarritoSnackComponent
     ],
     imports:[
