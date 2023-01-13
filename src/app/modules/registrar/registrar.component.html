@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@Sprogramdor 
+FbrzRM
+/
+zinema
+Public
+Fork your own copy of FbrzRM/zinema
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+zinema/src/app/modules/registrar/registrar.component.html
+@FbrzRM
+FbrzRM Login, registro, footer
+Latest commit ec88fda 7 hours ago
+ History
+ 1 contributor
+118 lines (108 sloc)  6.48 KB
+
 <section class="container">
     <h2 style="margin-top: 3rem;">Registro</h2>
     <hr>
@@ -9,32 +39,51 @@
                 <tr>
                     <td><mat-form-field class="example-full-width">
                             <mat-label>Nombre</mat-label>
-                            <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
-                            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                                Please enter a valid email address
-                            </mat-error>
-                            <mat-error *ngIf="emailFormControl.hasError('required')">
+                            <input type="text" matInput [formControl]="nombres" placeholder="Juan Pita">
+                            <mat-error *ngIf="nombres.hasError('required')">
                                 El nombre es <strong>requerido</strong>
                             </mat-error>
                         </mat-form-field></td>
                     <td><mat-form-field class="example-full-width">
                             <mat-label>Apellido</mat-label>
-                            <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
-                            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                                Please enter a valid email address
-                            </mat-error>
-                            <mat-error *ngIf="emailFormControl.hasError('required')">
+                            <input type="text" matInput [formControl]="apellidos" placeholder="ALvarez Borque">
+                            <mat-error *ngIf="apellidos.hasError('required')">
                                 El apellido es <strong>requerido</strong>
                             </mat-error>
                         </mat-form-field></td>
                 </tr>
-            </table>
-            <mat-form-field class="example-full-width">
+              
+                <tr>
+
+                    <td>
+                <mat-form-field class="example-full-width">
                 <mat-label>Teléfono</mat-label>
                 <span matPrefix>+593 &nbsp;</span>
-                <input type="tel" matInput placeholder="555-555-1234">
-                <mat-icon matSuffix>mode_edit</mat-icon>
-            </mat-form-field>
+                <input [formControl]="telf" type="tel" matInput placeholder="555-555-12">
+                <mat-error *ngIf="telf.hasError('required')">
+                    Teléfono es <strong>requerido</strong>
+                </mat-error>
+                <mat-icon matSuffix>phone</mat-icon>
+                </mat-form-field>
+                </td>
+
+                <td> 
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Cedula de identidad</mat-label>
+                        <input type="text" matInput [formControl]="cedula" placeholder="09999999">
+                        <mat-error *ngIf="cedula.hasError('required')">
+                            La C.I es <strong>requerido</strong>
+                        </mat-error>
+                        <mat-icon matSuffix>perm_identity</mat-icon>
+                    </mat-form-field>
+
+                </td>
+
+                </tr>
+               
+
+            </table>
+            
 
             <table class="example-full-width s-r" cellspacing="0">
                 <tr>
@@ -116,3 +165,18 @@
 
     </form>
 </section>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+zinema/registrar.component.html at test · FbrzRM/zinema
