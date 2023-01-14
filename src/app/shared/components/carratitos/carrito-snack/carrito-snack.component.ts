@@ -19,9 +19,6 @@ export class CarritoSnackComponent{
     constructor(private carritoServices: CarritoServices, public router:Router, private dialog:MatDialog){}
 
     fn(){
-        this.carritoServices.carrito
-        this.dialog.open(PagoComponent, {
-            width: '50%',
-          })
+        this.router.navigate(['/resumen-bar'])
     }
 }

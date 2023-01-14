@@ -3,3 +3,6 @@ mat-card-subtitle{
     background-color: red;
     font-size: 24px;
 }
+mat-card{
+    align-content: center;
+}

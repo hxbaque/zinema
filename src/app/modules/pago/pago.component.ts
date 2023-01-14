@@ -3,7 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { NavigationExtras, Router } from '@angular/router';
 import {MatSelectModule} from '@angular/material/select';
-import { AdinfoComponent } from '../adinfo/adinfo.component';
+import { AdinfoComponent } from '../info/adinfo/adinfo.component';
 
 @Component({
   selector: 'app-pago',
@@ -39,7 +39,6 @@ export class PagoComponent implements OnInit {
       fragment: 'top' 
     };
 
-    this.redirectTo('/snack-bar', objToSend);
   }
   redirectTo(uri:string, objToSend:NavigationExtras){
     this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>

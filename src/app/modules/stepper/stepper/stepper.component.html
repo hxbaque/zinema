@@ -136,6 +136,7 @@
   <mat-step [stepControl]=" secondFormGroup">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Resumen de la compra</ng-template>
+      <app-resumen-row></app-resumen-row>
       <div>
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>

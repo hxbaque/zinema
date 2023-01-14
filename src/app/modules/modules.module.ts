@@ -12,7 +12,10 @@ import { PagoComponent } from "./pago/pago.component";
 import { LoginComponent } from "./login/login.component";
 import { RegistrarComponent } from "./registrar/registrar.component";
 import { PromocionesComponent } from "./promociones/promociones.component";
-import { AdinfoComponent } from './adinfo/adinfo.component';
+import { AdinfoComponent } from './info/adinfo/adinfo.component';
+import { ResumenComponent } from './resumen/resumen-bar/resumen.component';
+import { ResumenRowComponent } from './resumen/resumen-row/resumen-row.component';
+import { ExinfoComponent } from './info/exinfo/exinfo.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +28,10 @@ import { AdinfoComponent } from './adinfo/adinfo.component';
         LoginComponent,
         RegistrarComponent,
         PromocionesComponent,
-        AdinfoComponent
+        AdinfoComponent,
+        ResumenComponent,
+        ResumenRowComponent,
+        ExinfoComponent
     ],
     exports: [
         HomeComponent,

@@ -7,7 +7,9 @@ import { HomeComponent } from "./modules/home/home.component";
 import { PagoComponent } from "./modules/pago/pago.component";
 import { PromocionesComponent } from "./modules/promociones/promociones.component";
 import { RegistrarComponent } from "./modules/registrar/registrar.component";
-import { AdinfoComponent } from "./modules/adinfo/adinfo.component";
+import { AdinfoComponent } from "./modules/info/adinfo/adinfo.component";
+import { ResumenComponent } from "./modules/resumen/resumen-bar/resumen.component";
+import { ResumenRowComponent } from "./modules/resumen/resumen-row/resumen-row.component";
 
 const routes: Routes = [
     {path: '', component:HomeComponent},
@@ -18,6 +20,8 @@ const routes: Routes = [
     {path: 'promociones', component:PromocionesComponent},
     {path: 'registrar', component:RegistrarComponent},
     {path: 'info', component:AdinfoComponent},
+    {path: 'resumen-bar', component:ResumenComponent},
+    {path: 'resumen-row', component:ResumenRowComponent}
 ]
 
 
