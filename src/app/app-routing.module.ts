@@ -6,6 +6,7 @@ import { ComprasComponent } from "./modules/compras/compras.component";
 import { HomeComponent } from "./modules/home/home.component";
 import { PagoComponent } from "./modules/pago/pago.component";
 import { PromocionesComponent } from "./modules/promociones/promociones.component";
+
 import { RegistrarComponent } from "./modules/registrar/registrar.component";
 import { AdinfoComponent } from "./modules/info/adinfo/adinfo.component";
 import { ResumenComponent } from "./modules/resumen/resumen-bar/resumen.component";

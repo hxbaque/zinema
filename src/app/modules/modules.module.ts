@@ -11,10 +11,14 @@ import { CommonModule } from "@angular/common";
 import { PagoComponent } from "./pago/pago.component";
 import { LoginComponent } from "./login/login.component";
 import { RegistrarComponent } from "./registrar/registrar.component";
-import { PromocionesComponent } from "./promociones/promociones.component";
 import { AdinfoComponent } from './info/adinfo/adinfo.component';
 import { ResumenComponent } from './resumen/resumen-bar/resumen.component';
 import { ResumenRowComponent } from './resumen/resumen-row/resumen-row.component';
+import { PromocionesComponent } from "./promociones/promociones.component";
+
+
+
+
 import { ExinfoComponent } from './info/exinfo/exinfo.component';
 import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
 
@@ -28,12 +32,13 @@ import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
         PagoComponent,
         LoginComponent,
         RegistrarComponent,
-        PromocionesComponent,
         AdinfoComponent,
         ResumenComponent,
         ResumenRowComponent,
         ExinfoComponent,
-        ExinfoRowComponent
+        ExinfoRowComponent,
+        PromocionesComponent,
+       
     ],
     exports: [
         HomeComponent,
@@ -44,7 +49,8 @@ import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
         CoreModule,
         SharedModule,
         MaterialModule,
-        CommonModule
+        CommonModule,
+
     ]
 })
 
