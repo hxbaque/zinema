@@ -11,19 +11,15 @@ import { CommonModule } from "@angular/common";
 import { PagoComponent } from "./pago/pago.component";
 import { LoginComponent } from "./login/login.component";
 import { RegistrarComponent } from "./registrar/registrar.component";
-import { PromocionesComponent } from "./promociones/promociones.component";
 import { AdinfoComponent } from './info/adinfo/adinfo.component';
 import { ResumenComponent } from './resumen/resumen-bar/resumen.component';
 import { ResumenRowComponent } from './resumen/resumen-row/resumen-row.component';
-<<<<<<< HEAD
-//import { PromocionesComponent } from "./promociones/promociones/promociones.component";
+import { PromocionesComponent } from "./promociones/promociones/promociones.component";
 import { PromDialogComponent } from "./promociones/prom-dialog/prom-dialog.component";
 import { PromDialogSecComponent } from "./promociones/prom-dialog-sec/prom-dialog-sec.component";
 
 
 
-=======
->>>>>>> parent of f0f9d1b (Promociones update)
 import { ExinfoComponent } from './info/exinfo/exinfo.component';
 import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
 
@@ -42,15 +38,10 @@ import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
         ResumenComponent,
         ResumenRowComponent,
         ExinfoComponent,
-<<<<<<< HEAD
         ExinfoRowComponent,
+        PromocionesComponent, 
         PromDialogComponent,
         PromDialogSecComponent
-
-        
-=======
-        ExinfoRowComponent
->>>>>>> parent of f0f9d1b (Promociones update)
     ],
     exports: [
         HomeComponent,
