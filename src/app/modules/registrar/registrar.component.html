@@ -1,11 +1,11 @@
-
-
 <section class="container">
     <h2 style="margin-top: 3rem;">Registro</h2>
     <hr>
     <form class="example-form shadow">
         <fieldset class="fieldset">
-            <div class="divLegend" > <legend>Información personal</legend></div>
+            <div class="divLegend">
+                <legend>Información personal</legend>
+            </div>
 
             <table class="example-full-width" cellspacing="0">
                 <tr>
@@ -28,34 +28,34 @@
                 <tr>
 
                     <td>
-                <mat-form-field class="example-full-width">
-                <mat-label>Teléfono</mat-label>
-                <span matPrefix>+593 &nbsp;</span>
-                <input [formControl]="telf" type="tel" matInput placeholder="555-555-12">
-                <mat-error *ngIf="telf.hasError('required')">
-                    Teléfono es <strong>requerido</strong>
-                </mat-error>
-                <mat-icon matSuffix>phone</mat-icon>
-                </mat-form-field>
-                </td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Teléfono</mat-label>
+                            <span matPrefix>+593 &nbsp;</span>
+                            <input [formControl]="telf" type="tel" matInput placeholder="555-555-12">
+                            <mat-error *ngIf="telf.hasError('required')">
+                                Teléfono es <strong>requerido</strong>
+                            </mat-error>
+                            <mat-icon matSuffix>phone</mat-icon>
+                        </mat-form-field>
+                    </td>
 
-                <td> 
-                    <mat-form-field class="example-full-width">
-                        <mat-label>Cedula de identidad</mat-label>
-                        <input type="text" matInput [formControl]="cedula" placeholder="09999999">
-                        <mat-error *ngIf="cedula.hasError('required')">
-                            La C.I es <strong>requerido</strong>
-                        </mat-error>
-                        <mat-icon matSuffix>perm_identity</mat-icon>
-                    </mat-form-field>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Cedula de identidad</mat-label>
+                            <input type="text" matInput [formControl]="cedula" placeholder="09999999">
+                            <mat-error *ngIf="cedula.hasError('required')">
+                                La C.I es <strong>requerido</strong>
+                            </mat-error>
+                            <mat-icon matSuffix>perm_identity</mat-icon>
+                        </mat-form-field>
 
-                </td>
+                    </td>
 
                 </tr>
                 <tr class="separador"></tr>
 
             </table>
-            
+
 
             <table class="example-full-width s-r" cellspacing="0">
                 <tr>
@@ -83,7 +83,9 @@
                 <tr class="separador"></tr>
             </table>
 
-            <div class="divLegend" > <legend>E-mail de acceso</legend></div>
+            <div class="divLegend">
+                <legend>E-mail de acceso</legend>
+            </div>
             <mat-form-field class="example-full-width">
                 <mat-label>Email</mat-label>
                 <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">

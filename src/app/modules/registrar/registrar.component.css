@@ -32,16 +32,21 @@ tr {
   }
 }
 
-.separador{
+.separador {
   height: 30px;
 }
 
-.separadordatos{
+.separadordatos {
   height: 60px;
   background-color: black;
 }
 
-.divLegend{
+.divLegend {
+  padding: 1rem;
   background-color: rgb(39, 39, 39);
-   color: white;
+  color: white;
+}
+legend {
+  display: block;
+  text-align: center;
 }
