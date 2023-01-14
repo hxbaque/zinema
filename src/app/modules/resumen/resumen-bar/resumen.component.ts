@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { ExinfoComponent } from '../../info/exinfo/exinfo.component';
 
 @Component({
   selector: 'app-resumen',
@@ -7,9 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./resumen.component.css']
 })
 export class ResumenComponent {
-  constructor(private router: Router){}
+  constructor(private router: Router, private dialog:MatDialog){}
   onSubmit(){
-    this.router.navigate(['/snack-bar'])
+    this.dialog.open(ExinfoComponent);
   }
   cancelar(){
     this.router.navigate(['/snack-bar'])

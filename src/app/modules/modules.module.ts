@@ -16,6 +16,7 @@ import { AdinfoComponent } from './info/adinfo/adinfo.component';
 import { ResumenComponent } from './resumen/resumen-bar/resumen.component';
 import { ResumenRowComponent } from './resumen/resumen-row/resumen-row.component';
 import { ExinfoComponent } from './info/exinfo/exinfo.component';
+import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
 
 @NgModule({
     declarations: [
@@ -31,7 +32,8 @@ import { ExinfoComponent } from './info/exinfo/exinfo.component';
         AdinfoComponent,
         ResumenComponent,
         ResumenRowComponent,
-        ExinfoComponent
+        ExinfoComponent,
+        ExinfoRowComponent
     ],
     exports: [
         HomeComponent,
