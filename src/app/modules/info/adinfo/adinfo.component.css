@@ -6,3 +6,10 @@ mat-card-subtitle{
 mat-card{
     align-content: center;
 }
+#medio{
+    margin-left: 180px;
+}
+#aceptar{
+    background-color: black;
+    color: aliceblue;
+  }
