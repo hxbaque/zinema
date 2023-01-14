@@ -14,9 +14,8 @@ import { RegistrarComponent } from "./registrar/registrar.component";
 import { AdinfoComponent } from './info/adinfo/adinfo.component';
 import { ResumenComponent } from './resumen/resumen-bar/resumen.component';
 import { ResumenRowComponent } from './resumen/resumen-row/resumen-row.component';
-import { PromocionesComponent } from "./promociones/promociones/promociones.component";
-import { PromDialogComponent } from "./promociones/prom-dialog/prom-dialog.component";
-import { PromDialogSecComponent } from "./promociones/prom-dialog-sec/prom-dialog-sec.component";
+import { PromocionesComponent } from "./promociones/promociones.component";
+
 
 
 
@@ -33,15 +32,13 @@ import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
         PagoComponent,
         LoginComponent,
         RegistrarComponent,
-        PromocionesComponent,
         AdinfoComponent,
         ResumenComponent,
         ResumenRowComponent,
         ExinfoComponent,
         ExinfoRowComponent,
-        PromocionesComponent, 
-        PromDialogComponent,
-        PromDialogSecComponent
+        PromocionesComponent,
+       
     ],
     exports: [
         HomeComponent,
