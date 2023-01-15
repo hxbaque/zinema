@@ -9,12 +9,20 @@ export class CarritoServices{
         console.log("Work");
        return []
     }
-    addCarrito(){
-        
+
+
+    addCarrito(p:any){
+        this._carrito.push(p);
     }
-    removerCarrito(){
+
+
+    removerCarrito(id:any){
+
+        
 
     }
+
+
     clearCarrito(){
       
     }

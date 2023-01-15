@@ -10,7 +10,7 @@
             <p>${{data.precio}}.00</p>
             <mat-card-actions class="count">
                 
-                <button (click)="adquirir(i, -1)" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+                <button (click)="adquirir(i, -1,data.id_snack)" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
                     <mat-icon>remove</mat-icon>
                 </button>
                 
@@ -24,7 +24,7 @@
 
 
 
-                <button (click)="adquirir(i, 1)" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+                <button (click)="adquirir(i, 1,data.id_snack)" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
                     <mat-icon>add</mat-icon>
                 </button>
             </mat-card-actions>

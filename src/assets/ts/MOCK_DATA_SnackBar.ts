@@ -21,21 +21,21 @@ export const SnackBar = [
         precio: 5
     },
     {
-        id_snack: 3,
+        id_snack: 4,
         img: '../../../../../assets/img/snacks/nachos-gaseosa.jpg',
         nombre: 'Nachos con queso Y Gaseosa',
         descripcion: 'eliciosas Hojuelas de maíz acompañadas de salsa de queso Cheddar y una refrescante gaseosa de 22oz en el cine!',
         precio: 5
     },
     {
-        id_snack: 4,
+        id_snack: 5,
         img: '../../../../../assets/img/snacks/hot-dog.jpg',
         nombre: 'Hot dog',
         descripcion: '"Deliciosos Hot Dogs de Res o Pollo, siempre frescos y calientes en nuestro cine. ¡Un aperitivo perfecto durante el show!"',
         precio: 4
     },
     {
-        id_snack: 5,
+        id_snack: 6,
         img: '../../../../../assets/img/snacks/agua.jpg',
         nombre: 'Agua',
         descripcion: 'Disfruta de nuestra deliciosa agua Dasani sin o con gas, helada o sin helar en el cine. No te lo puedes perder',
