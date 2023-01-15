@@ -9,17 +9,33 @@ import { MatStep } from '@angular/material/stepper';
 })
 export class StepperComponent{
 
-
   nasientos=1;
   pageIndex=0;
+  fc="";
+  puesto = "";
+
+  val(hora: string){
+    this.fc=hora;
+    console.log(this.fc)
+  }
+
+  aciento(p: string){
+    this.puesto = p;
+    console.log(this.puesto);
+  }
+
+
+
 
 
   constructor(private _formBuilder: FormBuilder) {}
 
-  
   firstFormGroup: FormGroup = this._formBuilder.group({firstCtrl: ['', Validators.required]});
-  secondFormGroup: FormGroup = this._formBuilder.group({secondCtrl: ['']});
-  thirdFormGroup: FormGroup = this._formBuilder.group({thirdCtrl: ['']});
+  secondFormGroup: FormGroup = this._formBuilder.group({secondCtrl: ['', Validators.required]});
+  thirdFormGroup: FormGroup = this._formBuilder.group({thirdCtrl: ['', Validators.required]});
+  fourFormGroup: FormGroup = this._formBuilder.group({fourCtrl: ['']});
+  fiveFormGroup: FormGroup = this._formBuilder.group({fiveCtrl: ['']});
+  SixFormGroup: FormGroup = this._formBuilder.group({SixCtrl: ['', Validators.required]});
 
   selectedValue: string="0";
   selectedCar: string="0";

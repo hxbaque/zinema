@@ -24,6 +24,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 
@@ -49,6 +50,7 @@ const MaterialComponents = [
   MatChipsModule,
   MatStepperModule,
   MatBadgeModule,
+  MatButtonToggleModule,
 
   MatCheckboxModule,
   MatDatepickerModule,

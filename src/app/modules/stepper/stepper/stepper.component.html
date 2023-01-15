@@ -1,76 +1,67 @@
-<mat-vertical-stepper #stepper>
+<mat-vertical-stepper [linear]="true" #stepper>
   <!-- [linear]="true" -->
 
   <mat-step [stepControl]="firstFormGroup">
     <form [formGroup]="firstFormGroup">
       <ng-template matStepLabel>Selecciona una fecha y el horario</ng-template>
-
-      <div>
-        <h3>Horarios</h3>
-        <mat-tab-group>
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon class="example-tab-icon">calendar_today</mat-icon>
-              Dom 25
-            </ng-template>
-            <mat-chip-list>
-              <mat-chip>11:00</mat-chip>
-              <mat-chip>12:30</mat-chip>
-              <mat-chip>13:00</mat-chip>
-              <mat-chip>15:30</mat-chip>
-              <mat-chip>17:30</mat-chip>
-              <mat-chip>18:30</mat-chip>
-            </mat-chip-list>
-          </mat-tab>
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon class="example-tab-icon">calendar_today</mat-icon>
-              Lun 26
-            </ng-template>
-            <mat-chip-list>
-              <mat-chip>11:00</mat-chip>
-              <mat-chip>12:30</mat-chip>
-              <mat-chip>13:00</mat-chip>
-              <mat-chip>15:30</mat-chip>
-              <mat-chip>17:30</mat-chip>
-              <mat-chip>18:30</mat-chip>
-            </mat-chip-list>
-          </mat-tab>
-
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon class="example-tab-icon">calendar_today</mat-icon>
-              Mar 27
-            </ng-template>
-            <mat-chip-list>
-              <mat-chip>11:00</mat-chip>
-              <mat-chip>12:30</mat-chip>
-              <mat-chip>13:00</mat-chip>
-              <mat-chip>15:30</mat-chip>
-              <mat-chip>17:30</mat-chip>
-              <mat-chip>18:30</mat-chip>
-            </mat-chip-list>
-          </mat-tab>
-
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon class="example-tab-icon">calendar_today</mat-icon>
-              Mie 28
-            </ng-template>
-
-            <mat-chip-list>
-              <mat-chip>11:00</mat-chip>
-              <mat-chip>12:30</mat-chip>
-              <mat-chip>13:00</mat-chip>
-              <mat-chip>15:30</mat-chip>
-              <mat-chip>17:30</mat-chip>
-              <mat-chip>18:30</mat-chip>
-            </mat-chip-list>
-          </mat-tab>
-
-        </mat-tab-group>
-        <br>
-      </div>
+      <h3>Horarios</h3>
+      <mat-form-field class="input">
+        <input class="fc" matInput formControlName="firstCtrl" [ngModel]="fc" required>
+      </mat-form-field>
+      <mat-tab-group>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">calendar_today</mat-icon>Dom 25
+          </ng-template>
+          <mat-chip-list>
+            <mat-chip (click)="val('11:00')">11:00</mat-chip>
+            <mat-chip (click)="val('12:30')">12:30</mat-chip>
+            <mat-chip (click)="val('13:00')">13:00</mat-chip>
+            <mat-chip (click)="val('15:30')">15:30</mat-chip>
+            <mat-chip (click)="val('17:30')">17:30</mat-chip>
+            <mat-chip (click)="val('18:30')">18:30</mat-chip>
+          </mat-chip-list>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">calendar_today</mat-icon>Dom 26
+          </ng-template>
+          <mat-chip-list>
+            <mat-chip (click)="val('11:00')">11:00</mat-chip>
+            <mat-chip (click)="val('12:30')">12:30</mat-chip>
+            <mat-chip (click)="val('13:00')">13:00</mat-chip>
+            <mat-chip (click)="val('15:30')">15:30</mat-chip>
+            <mat-chip (click)="val('17:30')">17:30</mat-chip>
+            <mat-chip (click)="val('18:30')">18:30</mat-chip>
+          </mat-chip-list>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">calendar_today</mat-icon>Dom 27
+          </ng-template>
+          <mat-chip-list>
+            <mat-chip (click)="val('11:00')">11:00</mat-chip>
+            <mat-chip (click)="val('12:30')">12:30</mat-chip>
+            <mat-chip (click)="val('13:00')">13:00</mat-chip>
+            <mat-chip (click)="val('15:30')">15:30</mat-chip>
+            <mat-chip (click)="val('17:30')">17:30</mat-chip>
+            <mat-chip (click)="val('18:30')">18:30</mat-chip>
+          </mat-chip-list>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">calendar_today</mat-icon>Dom 28
+          </ng-template>
+          <mat-chip-list>
+            <mat-chip (click)="val('11:00')">11:00</mat-chip>
+            <mat-chip (click)="val('12:30')">12:30</mat-chip>
+            <mat-chip (click)="val('13:00')">13:00</mat-chip>
+            <mat-chip (click)="val('15:30')">15:30</mat-chip>
+            <mat-chip (click)="val('17:30')">17:30</mat-chip>
+            <mat-chip (click)="val('18:30')">18:30</mat-chip>
+          </mat-chip-list>
+        </mat-tab>
+      </mat-tab-group>
       <div>
         <button mat-button matStepperNext>Next</button>
       </div>
@@ -83,7 +74,7 @@
       <ng-template matStepLabel>Número de boletos</ng-template>
       <mat-form-field appearance="fill">
         <mat-label>Cantidad</mat-label>
-        <mat-select>
+        <mat-select matInput formControlName="secondCtrl">
           <mat-option *ngFor="let food of foods" [value]="food.value">
             {{food.viewValue}}
           </mat-option>
@@ -98,8 +89,11 @@
   </mat-step>
 
 
-  <mat-step [stepControl]="secondFormGroup">
-    <form [formGroup]="secondFormGroup">
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
+      <mat-form-field class="input">
+        <input class="fc" matInput formControlName="thirdCtrl" [ngModel]="puesto" required>
+      </mat-form-field>
       <ng-template matStepLabel>Selecciona los asientos</ng-template>
 
       <h3>Selecciona tu asiento en el teatro</h3>
@@ -108,8 +102,9 @@
       </div>
       <br>
       <div class="teatro">
-        <button *ngFor="let puesto of asientos; let i = index" mat-stroked-button class="puesto"><mat-icon>event_seat
-          </mat-icon> {{puesto}}</button>
+        <mat-button-toggle matInput *ngFor="let puesto of asientos; let i = index" (click)="aciento(puesto)" mat-stroked-button class="puesto">
+          <mat-icon>event_seat</mat-icon> {{puesto}}
+        </mat-button-toggle>
       </div>
       <br>
 
@@ -120,8 +115,8 @@
     </form>
   </mat-step>
 
-  <mat-step [stepControl]="secondFormGroup">
-    <form [formGroup]="secondFormGroup">
+  <mat-step [stepControl]="fourFormGroup">
+    <form [formGroup]="fourFormGroup">
       <ng-template matStepLabel>SnackBar</ng-template>
       <div class="caja">
         <!-- <app-snack-bar></app-snack-bar> -->
@@ -133,8 +128,8 @@
       </div>
     </form>
   </mat-step>
-  <mat-step [stepControl]=" secondFormGroup">
-    <form [formGroup]="secondFormGroup">
+  <mat-step [stepControl]="fiveFormGroup">
+    <form [formGroup]="fiveFormGroup">
       <ng-template matStepLabel>Resumen de la compra</ng-template>
       <app-resumen-row></app-resumen-row>
       <div>
@@ -143,8 +138,8 @@
       </div>
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup">
-    <form [formGroup]="secondFormGroup">
+  <mat-step [stepControl]="SixFormGroup">
+    <form [formGroup]="SixFormGroup">
       <ng-template matStepLabel>Pago</ng-template>
       <app-pago></app-pago>
       <div>
