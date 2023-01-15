@@ -35,6 +35,7 @@ export class SnackBarComponent implements OnInit {
     }
 
     console.log(prod.nombre);
+
     this.carrito.addCarrito(prod,this.value[i]);
 
   }
@@ -46,16 +47,11 @@ export class SnackBarComponent implements OnInit {
     if(this.value[i] < 0){
       this.value[i]=0;
       //console.log(idprod);
-    }
-
-
-
-
     console.log(prod.nombre);
 
 
   }
-
+  }
 
   addCarrito(){
     this.router.navigate(['/pago']);

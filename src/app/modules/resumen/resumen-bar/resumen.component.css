@@ -1,3 +1,7 @@
+@media (min-width: 1140px) {
+  
+}
+
 p{
     font-style: italic;
 }
@@ -13,5 +17,63 @@ button {
     color: aliceblue;
   }
   #medio{
-    margin-left: 950px;
+    margin: auto;
   }
+
+  .lista { 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 555px;
+    width: 888px;
+    border-radius: 0.8rem;
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+
+   div.minimalistBlack {
+    border: 0px solid #B8FFA1;
+    width: 94%;
+    height: 198px;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  .divTable.minimalistBlack .divTableCell, .divTable.minimalistBlack .divTableHead {
+    border: 0px solid #000000;
+    padding: 5px 4px;
+  }
+  .divTable.minimalistBlack .divTableBody .divTableCell {
+    font-size: 13px;
+    color: #3C404A;
+  }
+  .divTable.minimalistBlack .divTableHeading {
+    background: #043665;
+    background: -moz-linear-gradient(top, #43688b 0%, #1d4a74 66%, #043665 100%);
+    background: -webkit-linear-gradient(top, #43688b 0%, #1d4a74 66%, #043665 100%);
+    background: linear-gradient(to bottom, #43688b 0%, #1d4a74 66%, #043665 100%);
+    border-bottom: 2px solid #000000;
+  }
+  .divTable.minimalistBlack .divTableHeading .divTableHead {
+    font-size: 15px;
+    font-weight: bold;
+    color: #F2F2F2;
+    text-align: left;
+  }
+  .minimalistBlack .tableFootStyle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    border-top: 2px solid #000000;
+  }
+  .minimalistBlack .tableFootStyle {
+    font-size: 14px;
+  }
+  /* DivTable.com */
+  .divTable{ display: table; }
+  .divTableRow { display: table-row; }
+  .divTableHeading { display: table-header-group;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}

@@ -11,16 +11,29 @@ import { Router } from "@angular/router";
 })
 export class CarritoSnackComponent{
     hidden = false;
+    p=true;
     activo=false;
-
+    count=this.carritoS.cantidadcarrito;
+    suma=0;
     toggleBadgeVisibility() {
     this.hidden = !this.hidden;
     }
 
-    constructor(public carritoS: CarritoServices, public router:Router, private dialog:MatDialog){}
+    constructor(public carritoS: CarritoServices, public router:Router, private dialog:MatDialog){
+      
+    }
 
 
+    badge(){
+        if(this.carritoS.cantidadcarrito() > 0){
+            this.p=false;
+        }return this.p;
+    }
 
+    total(){
+        this.suma=this.carritoS.totalSnack();
+        return this.suma;
+    }
 
     fn(){
         this.router.navigate(['/resumen-bar'])

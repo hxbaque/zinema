@@ -4,6 +4,9 @@ import { Injectable } from "@angular/core";
 export class CarritoServices{
 
     private _carrito: any = [];
+     
+    totalsn=0;
+    xmap = new Map();
 
     get carrito(){
         //console.log("Work");
@@ -12,7 +15,8 @@ export class CarritoServices{
 
 
     addCarrito(p:any,cantidad: number){
-        this._carrito.push(p);
+        //this._carrito.push(p.precio);
+             this.xmap.set(p,cantidad); // id producto y cantidad comprada 
     }
 
     removerCarrito(id:any){
@@ -21,9 +25,18 @@ export class CarritoServices{
     }
     
     cantidadcarrito(){
-        return this._carrito.length;
+        return this.xmap.size;
     }
 
+    totalSnack(){
+        for(let item of this.xmap.entries()){
+            let a=item[0].precio*item[1];
+            this.totalsn=this.totalsn+a;
+        }
+        return this.totalsn;
+    }
+
+    
 
     clearCarrito(){
       

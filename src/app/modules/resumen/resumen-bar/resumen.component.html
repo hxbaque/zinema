@@ -1,22 +1,52 @@
-<form>
-  <mat-grid-list cols="2" rowHeight="2.5:1">
-    <mat-grid-tile><p><mat-icon> fastfood</mat-icon>SNACKBAR: <br><br>Nachos con queso Y Gaseosa<br><br>Hot dog<br><br>CANGUIL PEQUEÑO 85oz<br><br>COMBO POP</p></mat-grid-tile>
-    <mat-grid-tile><br><br>$5,00<br><br>$4,00<br><br>$2,00<br><br>$5,00</mat-grid-tile>
-  </mat-grid-list>
-  <mat-grid-list cols="2" rowHeight="10:1">
-    <mat-grid-tile><p>Cargo por servicio confiteria * valor incluye iva</p></mat-grid-tile>
-    <mat-grid-tile>$ 0,25</mat-grid-tile><mat-divider></mat-divider>
-  </mat-grid-list>
-  <mat-grid-list cols="2" rowHeight="10:1">
-    <mat-grid-tile><p>Cargo por servicio * valor incluye iva</p></mat-grid-tile>
-    <mat-grid-tile>$ 0,75</mat-grid-tile><mat-divider></mat-divider>
-  </mat-grid-list>
-  <mat-grid-list cols="2" rowHeight="10:1">
-    <mat-grid-tile><p>Total</p></mat-grid-tile>
-    <mat-grid-tile>$ 16,00</mat-grid-tile><mat-divider></mat-divider>
-  </mat-grid-list>
+
+ 
+<br><br>
+<div class=" lista shadow">
+  <br><br>
+  <h4><mat-icon> fastfood</mat-icon> SNACKBAR</h4>
+  <br>
+  
+
+
+
+
+  <div class="divTable minimalistBlack">
+    <div class="divTableHeading">
+    <div class="divTableRow">
+    <div class="divTableHead">Cantidad</div>
+    <div class="divTableHead">Producto</div>
+    <div class="divTableHead">Precio</div>
+    </div>
+    </div>
+    <div class="divTableBody">
+
+    <div class="divTableRow" *ngFor="let item of carrito.xmap| keyvalue">
+
+    <div class="divTableCell">{{item.value}}</div>
+    <div class="divTableCell">{{item.key.nombre}}</div>
+    <div class="divTableCell">${{item.key.precio}}</div>
+    </div>
+
+    </div>
+    <div class="divTableFoot tableFootStyle">
+    <div class="divTableRow">
+    <div class="divTableCell">Total</div>
+    <div class="divTableCell"></div>
+    <div class="divTableCell">{{total}}</div> <!--total -->
+      </div>
+    </div>
+    </div>
+
   <div id="medio">
+    <form>
+
     <button mat-raised-button (click)="onSubmit()" id="aceptar">Aceptar</button>
     <button mat-raised-button (click)="cancelar()">Cancelar</button>
-  </div>
+  
 </form>
+</div>
+</div>
+  
+
+
+
