@@ -1,6 +1,5 @@
 import { Component} from '@angular/core';
 import {FormBuilder, FormGroup,Validators} from '@angular/forms';
-import { MatStep } from '@angular/material/stepper';
 
 @Component({
   selector: 'app-stepper',
@@ -23,10 +22,6 @@ export class StepperComponent{
     this.puesto = p;
     console.log(this.puesto);
   }
-
-
-
-
 
   constructor(private _formBuilder: FormBuilder) {}
 
