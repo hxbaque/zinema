@@ -61,16 +61,18 @@ a:hover {
 
 .mat-drawer {
   position: fixed;
-  width: 50%;
-  height: 10%;
+  width: 25rem;
+  height: 25rem;
   z-index: 9;
   top: 0;
   left: 0;
 }
 
-.mat-drawer-content {
+mat-drawer-content {
   position: fixed;
-  width: 10rem;
-  height: 10rem;
-  background-color: red;
+  width: auto;
+  height: auto;
+  top: 0rem;
+  padding: 0;
+  right: 2rem;
 }
