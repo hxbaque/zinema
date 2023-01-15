@@ -11,6 +11,7 @@ import { RegistrarComponent } from "./modules/registrar/registrar.component";
 import { AdinfoComponent } from "./modules/info/adinfo/adinfo.component";
 import { ResumenComponent } from "./modules/resumen/resumen-bar/resumen.component";
 import { ResumenRowComponent } from "./modules/resumen/resumen-row/resumen-row.component";
+import { PerfilComponent } from "./modules/perfil/perfil.component";
 
 const routes: Routes = [
     {path: '', component:HomeComponent},
@@ -22,7 +23,8 @@ const routes: Routes = [
     {path: 'registrar', component:RegistrarComponent},
     {path: 'info', component:AdinfoComponent},
     {path: 'resumen-bar', component:ResumenComponent},
-    {path: 'resumen-row', component:ResumenRowComponent}
+    {path: 'resumen-row', component:ResumenRowComponent},
+    {path: 'perfil', component:PerfilComponent}
 ]
 
 

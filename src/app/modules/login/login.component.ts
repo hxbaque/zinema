@@ -23,6 +23,10 @@ export class LoginComponent{
   onSubmit(){
 
     if (this.usuarioLogin.value.usuario=="mauro" && this.usuarioLogin.value.password=="123"){
+      this.loginService.username = this.usuarioLogin.value.usuario;
+      localStorage.setItem('u', this.usuarioLogin.value.usuario)
+
+      console.log(localStorage.getItem('u') || '')
       this.router.navigate(['']);
       this.dialogRef.close();
     }
@@ -30,6 +34,5 @@ export class LoginComponent{
       this.alert = true;
       setTimeout(() => this.alert=false, 4000);
     }
-
   }
 }

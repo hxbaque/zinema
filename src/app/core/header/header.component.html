@@ -12,7 +12,7 @@
     <button class="logg" mat-raised-button [matMenuTriggerFor]="menu" *ngIf="loginService.username.length>0" id="user">
         <mat-icon>account_circle</mat-icon> Bienvenido {{loginService.username}}</button>
     <mat-menu #menu="matMenu">
-        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item (click)="perfil()">Perfil</button>
         <button mat-menu-item (click)="Salir()">Cerrar Sesion</button>
     </mat-menu>
 </mat-toolbar>
@@ -34,7 +34,7 @@
             <button class="logg" mat-raised-button [matMenuTriggerFor]="menu" *ngIf="loginService.username.length>0" id="user">
                 <mat-icon>account_circle</mat-icon> Bienvenido {{loginService.username}}</button>
             <mat-menu #menu="matMenu">
-                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item (click)="perfil()">Ver perfil</button>
                 <button mat-menu-item (click)="Salir()">Cerrar Sesion</button>
             </mat-menu>
         </mat-drawer>

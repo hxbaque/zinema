@@ -23,6 +23,7 @@ import { PromocionesComponent} from "./promociones/promociones/promociones.compo
 
 import { ExinfoComponent } from './info/exinfo/exinfo.component';
 import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
+import { PerfilComponent } from "./perfil/perfil.component";
 
 @NgModule({
     declarations: [
@@ -42,7 +43,8 @@ import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
         PromocionesComponent,
         PromDialogComponent,
         PromDialogSecComponent,
-        PromocionesComponent
+        PromocionesComponent,
+        PerfilComponent
     ],
     exports: [
         HomeComponent,
