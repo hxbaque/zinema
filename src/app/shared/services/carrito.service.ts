@@ -1,3 +1,4 @@
+import { AnimateTimings } from "@angular/animations";
 import { Injectable } from "@angular/core";
 import { MatPaginatedTabHeader } from "@angular/material/tabs/paginated-tab-header";
 
@@ -15,6 +16,12 @@ export class CarritoServices{
        return []
     }
 
+
+
+
+    addmovie(nasientos:any,fecha:any,pelicula:any,){
+
+    }
 
 
     addCarrito(p:any,cantidad: number){

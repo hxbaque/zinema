@@ -102,7 +102,7 @@
       </div>
       <br>
       <div class="teatro">
-        <mat-button-toggle matInput *ngFor="let puesto of asientos; let i = index" (click)="aciento(puesto)" mat-stroked-button class="puesto">
+        <mat-button-toggle matInput *ngFor="let puesto of asientos; let i = index" (click)="aciento(puesto)"  [value]="i"  [checked]=""  class="puesto">
           <mat-icon>event_seat</mat-icon> {{puesto}}
         </mat-button-toggle>
       </div>

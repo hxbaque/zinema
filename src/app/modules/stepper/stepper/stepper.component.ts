@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import {FormBuilder, FormGroup,Validators} from '@angular/forms';
+import { CarritoServices } from 'src/app/shared/services/carrito.service';
 
 @Component({
   selector: 'app-stepper',
@@ -13,13 +14,11 @@ export class StepperComponent{
   fc="";
   puesto = "";
 
-  val(hora: string){
-    this.fc=hora;
-    console.log(this.fc)
-  }
+  
 
   
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(private _formBuilder: FormBuilder, public carrito:CarritoServices
+    ) {}
 
   firstFormGroup: FormGroup = this._formBuilder.group({firstCtrl: ['', Validators.required]});
   secondFormGroup: FormGroup = this._formBuilder.group({secondCtrl: ['', Validators.required]});
@@ -35,6 +34,12 @@ export class StepperComponent{
     console.log("cantidad:"+this.secondFormGroup.get('secondCtrl')?.value);
   }
 
+  val(hora: string){
+    this.fc=hora;
+    console.log(this.fc)
+  }
+
+
 
 
 
@@ -48,6 +53,8 @@ export class StepperComponent{
                        ,"D1","D2","D3","D4","D5","D6","D7","D8","D9"
                        ,"E1","E2","E3","E4","E5","E6","E7","E8","E9"
                        ,"F1","F2","F3","F4","F5","F6","F7","F8","F9"]
+
+
   can: any = [
     {value: '1', viewValue: '1'},
     {value: '2', viewValue: '2'},
