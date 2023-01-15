@@ -1,9 +1,12 @@
-export const mockDataUsuarios = [
+export const mockDataUsuarios: Array<object> = [
   {
     cedula: 0999999999,
-    nombres: 'Fabrizio Ramos',
-    usuario: 'fbrz',
-    correo: 'mauro.ramosm@ug.edu.ec',
-    contrasenia: '12345',
+    telefono: 09888412,
+    nombres: "Fabrizio Ramos",
+    ciudad: "Guayaquil",
+    dirrecion: "Urdaneta",
+    usuario: "fbrz",
+    email: "mauro.ramosm@ug.edu.ec",
+    password: "12345",
   }
 ];

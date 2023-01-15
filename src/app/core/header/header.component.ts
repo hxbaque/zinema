@@ -22,4 +22,5 @@ export class HeaderComponent{
         this.loginService.username = "";
         this.router.navigate(['']);
     }
+    
 }
