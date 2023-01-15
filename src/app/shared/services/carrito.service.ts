@@ -15,16 +15,13 @@ export class CarritoServices{
         this._carrito.push(p);
     }
 
-
-    cantidadcarrito(){
-        return this._carrito.length;
-    }
-
-
     removerCarrito(id:any){
 
-        
-
+       
+    }
+    
+    cantidadcarrito(){
+        return this._carrito.length;
     }
 
 
