@@ -12,55 +12,6 @@
   p{
     font-size: 12px;
   }
-  mat-grid-tile{
-    font-size: 14px;
-    text-align: left;
-  }
-  .desc {
-    display: none;
-  }
+ .resume{
   
-  .info {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .count {
-    width: auto;
-  }
-  mat-form-field {
-    width: 10rem;
-    text-align: center;
-  }
-  
-  @media (min-width: 768px) {
-    .count {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      width: 5rem;
-    }
-    img {
-      margin-right: 2rem;
-      width: 12rem;
-    }
-    .row {
-      display: flex;
-      flex-direction: column;
-    }
-    .card-row {
-      width: 60rem;
-      margin: 2rem;
-    }
-  
-    .desc {
-      display: block;
-    }
-    .info {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+ }

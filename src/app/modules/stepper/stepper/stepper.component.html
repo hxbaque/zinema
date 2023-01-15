@@ -120,7 +120,9 @@
       <ng-template matStepLabel>SnackBar</ng-template>
       <div class="caja">
         <!-- <app-snack-bar></app-snack-bar> -->
+        
         <app-snack-row></app-snack-row>
+      
       </div>
       <div>
         <button mat-button matStepperPrevious>Back</button>
@@ -131,7 +133,9 @@
   <mat-step [stepControl]="fiveFormGroup">
     <form [formGroup]="fiveFormGroup">
       <ng-template matStepLabel>Resumen de la compra</ng-template>
-      <app-resumen-row></app-resumen-row>
+
+      <app-resumen-row [datos]="pass"></app-resumen-row>
+      
       <div>
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
