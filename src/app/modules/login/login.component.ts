@@ -11,7 +11,7 @@ import { LoginService } from "src/app/shared/services/login.service";
 
 })
 export class LoginComponent{
-    constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>, private loginSerice: LoginService) { }
+    constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>, private loginService: LoginService) { }
 
   alert: boolean = false;
 
@@ -23,7 +23,6 @@ export class LoginComponent{
   onSubmit(){
 
     if (this.usuarioLogin.value.usuario=="mauro" && this.usuarioLogin.value.password=="123"){
-      this.loginSerice.username = this.usuarioLogin.value.usuario;
       this.router.navigate(['']);
       this.dialogRef.close();
     }
