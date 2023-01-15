@@ -16,16 +16,38 @@ export class CarritoServices{
 
     addCarrito(p:any,cantidad: number){
         //this._carrito.push(p.precio);
-             this.xmap.set(p,cantidad); // id producto y cantidad comprada 
+             this.xmap.set(p,cantidad);
+             if(cantidad==0){
+                this.popCarrito(p);
+             } //  producto y cantidad comprada 
     }
 
-    removerCarrito(id:any){
+    popCarrito(p:any){
+        //this._carrito.push(p.precio);
+             this.xmap.delete(p); //    producto
+    }
 
-       
+
+
+    verCarrito(){ let a
+        for(let item of this.xmap.entries()){
+           a=item[0].nombre;
+            
+        }
+       return a
     }
     
     cantidadcarrito(){
         return this.xmap.size;
+    }
+
+    prodcant(){
+        let c=0;
+        for(let item of this.xmap.entries()){
+             c=c+item[1];
+          
+        }
+        return c;
     }
 
     totalSnack(){

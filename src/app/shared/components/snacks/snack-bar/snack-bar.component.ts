@@ -34,7 +34,8 @@ export class SnackBarComponent implements OnInit {
       //console.log(idprod);
     }
 
-    console.log(prod.nombre);
+    //console.log(prod.nombre);
+    console.log("add"+this.carrito.cantidadcarrito());
 
     this.carrito.addCarrito(prod,this.value[i]);
 
@@ -47,10 +48,17 @@ export class SnackBarComponent implements OnInit {
     if(this.value[i] < 0){
       this.value[i]=0;
       //console.log(idprod);
-    console.log(prod.nombre);
+  } //console.log("borrado"+prod.nombre);
 
+ 
+    this.carrito.addCarrito(prod,this.value[i]);
+  
 
-  }
+  /*if(this.value[0]==0){
+   this.carrito.popCarrito(prod);
+}*/
+console.log("quit "+this.carrito.cantidadcarrito());
+console.log("quit "+this.carrito.verCarrito());
   }
 
   addCarrito(){

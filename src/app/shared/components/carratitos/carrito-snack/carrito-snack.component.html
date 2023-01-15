@@ -1,6 +1,6 @@
 <div class="demo-section shadow section">
     <div class="cart">
-        <mat-icon matBadge="1" [matBadgeHidden]="badge()"  matBadgeColor="accent" >shopping_cart</mat-icon>
+        <mat-icon [matBadge]="nbadge()" [matBadgeHidden]="badge()"  matBadgeColor="accent" >shopping_cart</mat-icon>
         <p>$ {{0}} </p> <small class="small">+Cargo por servicio confiteria * valor incluye iva</small>
     </div>
     <div *ngIf="carritoS.cantidadcarrito()>0">

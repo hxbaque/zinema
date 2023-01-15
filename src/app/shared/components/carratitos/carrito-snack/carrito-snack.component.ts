@@ -13,7 +13,7 @@ export class CarritoSnackComponent{
     hidden = false;
     p=true;
     activo=false;
-    count=this.carritoS.cantidadcarrito;
+    count=0;
     suma=0;
     toggleBadgeVisibility() {
     this.hidden = !this.hidden;
@@ -27,13 +27,31 @@ export class CarritoSnackComponent{
     badge(){
         if(this.carritoS.cantidadcarrito() > 0){
             this.p=false;
+           
+        }else{
+            this.p=true;
         }return this.p;
     }
 
+
+
+nbadge(){
+    if(this.carritoS.cantidadcarrito() > 0){
+        this.count=this.carritoS.prodcant();
+    }else{
+        this.count=0;
+        this.badge();
+    }return this.count.toString();
+   
+}
+
     total(){
         this.suma=this.carritoS.totalSnack();
+
         return this.suma;
     }
+
+    
 
     fn(){
         this.router.navigate(['/resumen-bar'])
