@@ -18,11 +18,7 @@ export class StepperComponent{
     console.log(this.fc)
   }
 
-  aciento(p: string){
-    this.puesto = p;
-    console.log(this.puesto);
-  }
-
+  
   constructor(private _formBuilder: FormBuilder) {}
 
   firstFormGroup: FormGroup = this._formBuilder.group({firstCtrl: ['', Validators.required]});
@@ -31,6 +27,18 @@ export class StepperComponent{
   fourFormGroup: FormGroup = this._formBuilder.group({fourCtrl: ['']});
   fiveFormGroup: FormGroup = this._formBuilder.group({fiveCtrl: ['']});
   SixFormGroup: FormGroup = this._formBuilder.group({SixCtrl: ['', Validators.required]});
+  
+  aciento(p: string){
+    this.puesto = p;
+    
+    console.log(this.puesto);
+    console.log("cantidad:"+this.secondFormGroup.get('secondCtrl')?.value);
+  }
+
+
+
+
+
 
   selectedValue: string="0";
   selectedCar: string="0";
@@ -40,7 +48,7 @@ export class StepperComponent{
                        ,"D1","D2","D3","D4","D5","D6","D7","D8","D9"
                        ,"E1","E2","E3","E4","E5","E6","E7","E8","E9"
                        ,"F1","F2","F3","F4","F5","F6","F7","F8","F9"]
-  foods: any = [
+  can: any = [
     {value: '1', viewValue: '1'},
     {value: '2', viewValue: '2'},
     {value: '3', viewValue: '3'},

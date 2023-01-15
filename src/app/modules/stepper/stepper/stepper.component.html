@@ -14,51 +14,51 @@
             <mat-icon class="example-tab-icon">calendar_today</mat-icon>Dom 25
           </ng-template>
           <mat-chip-list>
-            <mat-chip (click)="val('11:00')">11:00</mat-chip>
-            <mat-chip (click)="val('12:30')">12:30</mat-chip>
-            <mat-chip (click)="val('13:00')">13:00</mat-chip>
-            <mat-chip (click)="val('15:30')">15:30</mat-chip>
-            <mat-chip (click)="val('17:30')">17:30</mat-chip>
-            <mat-chip (click)="val('18:30')">18:30</mat-chip>
+            <mat-chip (click)="val('Dom 25 - 11:00')">11:00</mat-chip>
+            <mat-chip (click)="val('Dom 25 - 12:30')">12:30</mat-chip>
+            <mat-chip (click)="val('Dom 25 - 13:00')">13:00</mat-chip>
+            <mat-chip (click)="val('Dom 25 - 15:30')">15:30</mat-chip>
+            <mat-chip (click)="val('Dom 25 - 17:30')">17:30</mat-chip>
+            <mat-chip (click)="val('Dom 25 - 18:30')">18:30</mat-chip>
           </mat-chip-list>
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">calendar_today</mat-icon>Dom 26
+            <mat-icon class="example-tab-icon">calendar_today</mat-icon>Lunes 26
           </ng-template>
           <mat-chip-list>
-            <mat-chip (click)="val('11:00')">11:00</mat-chip>
-            <mat-chip (click)="val('12:30')">12:30</mat-chip>
-            <mat-chip (click)="val('13:00')">13:00</mat-chip>
-            <mat-chip (click)="val('15:30')">15:30</mat-chip>
-            <mat-chip (click)="val('17:30')">17:30</mat-chip>
-            <mat-chip (click)="val('18:30')">18:30</mat-chip>
+            <mat-chip (click)="val('Lunes 26 - 11:00')">11:00</mat-chip>
+            <mat-chip (click)="val('Lunes 26 - 12:30')">12:30</mat-chip>
+            <mat-chip (click)="val('Lunes 26 - 13:00')">13:00</mat-chip>
+            <mat-chip (click)="val('Lunes 26 - 15:30')">15:30</mat-chip>
+            <mat-chip (click)="val('Lunes 26 - 17:30')">17:30</mat-chip>
+            <mat-chip (click)="val('Lunes 26 - 18:30')">18:30</mat-chip>
           </mat-chip-list>
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">calendar_today</mat-icon>Dom 27
+            <mat-icon class="example-tab-icon">calendar_today</mat-icon>Martes 27
           </ng-template>
           <mat-chip-list>
-            <mat-chip (click)="val('11:00')">11:00</mat-chip>
-            <mat-chip (click)="val('12:30')">12:30</mat-chip>
-            <mat-chip (click)="val('13:00')">13:00</mat-chip>
-            <mat-chip (click)="val('15:30')">15:30</mat-chip>
-            <mat-chip (click)="val('17:30')">17:30</mat-chip>
-            <mat-chip (click)="val('18:30')">18:30</mat-chip>
+            <mat-chip (click)="val('Martes 27 - 11:00')">11:00</mat-chip>
+            <mat-chip (click)="val('Martes 27 - 12:30')">12:30</mat-chip>
+            <mat-chip (click)="val('Martes 27 - 13:00')">13:00</mat-chip>
+            <mat-chip (click)="val('Martes 27 - 15:30')">15:30</mat-chip>
+            <mat-chip (click)="val('Martes 27 - 17:30')">17:30</mat-chip>
+            <mat-chip (click)="val('Martes 27 - 18:30')">18:30</mat-chip>
           </mat-chip-list>
         </mat-tab>
         <mat-tab>
           <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">calendar_today</mat-icon>Dom 28
+            <mat-icon class="example-tab-icon">calendar_today</mat-icon>Miercoles 28
           </ng-template>
           <mat-chip-list>
-            <mat-chip (click)="val('11:00')">11:00</mat-chip>
-            <mat-chip (click)="val('12:30')">12:30</mat-chip>
-            <mat-chip (click)="val('13:00')">13:00</mat-chip>
-            <mat-chip (click)="val('15:30')">15:30</mat-chip>
-            <mat-chip (click)="val('17:30')">17:30</mat-chip>
-            <mat-chip (click)="val('18:30')">18:30</mat-chip>
+            <mat-chip (click)="val('Miercoles 28 - 11:00')">11:00</mat-chip>
+            <mat-chip (click)="val('Miercoles 28 - 12:30')">12:30</mat-chip>
+            <mat-chip (click)="val('Miercoles 28 - 13:00')">13:00</mat-chip>
+            <mat-chip (click)="val('Miercoles 28 - 15:30')">15:30</mat-chip>
+            <mat-chip (click)="val('Miercoles 28 - 17:30')">17:30</mat-chip>
+            <mat-chip (click)="val('Miercoles 28 - 18:30')">18:30</mat-chip>
           </mat-chip-list>
         </mat-tab>
       </mat-tab-group>
@@ -75,8 +75,8 @@
       <mat-form-field appearance="fill">
         <mat-label>Cantidad</mat-label>
         <mat-select matInput formControlName="secondCtrl">
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
+          <mat-option *ngFor="let c of can" [value]="c.value">
+            {{c.viewValue}}
           </mat-option>
         </mat-select>
       </mat-form-field>
