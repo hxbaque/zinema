@@ -27,6 +27,7 @@ export class CarritoSnackComponent{
     badge(){
         if(this.carritoS.cantidadcarrito() > 0){
             this.p=false;
+           this.suma= this.total();
            
         }else{
             this.p=true;
@@ -46,9 +47,9 @@ nbadge(){
 }
 
     total(){
-        this.suma=this.carritoS.totalSnack();
+        let s=this.carritoS.totalSnack();
 
-        return this.suma;
+        return s;
     }
 
     

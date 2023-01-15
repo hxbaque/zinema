@@ -51,6 +51,7 @@ export class CarritoServices{
     }
 
     totalSnack(){
+        this.totalsn=0;
         for(let item of this.xmap.entries()){
             let a=item[0].precio*item[1];
             this.totalsn=this.totalsn+a;

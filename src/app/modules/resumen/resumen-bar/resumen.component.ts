@@ -29,6 +29,8 @@ total=this.carrito.totalSnack();
     this.router.navigate(['/snack-bar'])
 }
 
+
+
  
 
 
