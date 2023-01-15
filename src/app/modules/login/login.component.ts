@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Router} from '@angular/router';
+import { LoginService } from "src/app/shared/services/login.service";
 
 @Component({
     selector: 'app-login',
@@ -10,7 +11,7 @@ import { Router} from '@angular/router';
 
 })
 export class LoginComponent{
-    constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>) { }
+    constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>, private loginSerice: LoginService) { }
 
   alert: boolean = false;
 
@@ -22,6 +23,7 @@ export class LoginComponent{
   onSubmit(){
 
     if (this.usuarioLogin.value.usuario=="mauro" && this.usuarioLogin.value.password=="123"){
+      this.loginSerice.username = this.usuarioLogin.value.usuario;
       this.router.navigate(['']);
       this.dialogRef.close();
     }

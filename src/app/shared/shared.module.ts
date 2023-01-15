@@ -13,6 +13,7 @@ import { SnackBarServices } from "./services/snack-bar.service";
 import { CarritoSnackComponent } from "./components/carratitos/carrito-snack/carrito-snack.component";
 import { CarritoServices } from "./services/carrito.service";
 import { SnackRowComponent } from "./components/snacks/snack-row/snack-row.component";
+import { LoginService } from "./services/login.service";
 
 @NgModule({
     declarations: [
@@ -40,7 +41,8 @@ import { SnackRowComponent } from "./components/snacks/snack-row/snack-row.compo
     providers:[
         PeliculasServices,
         SnackBarServices,
-        CarritoServices
+        CarritoServices,
+        LoginService
     ]
 })
 

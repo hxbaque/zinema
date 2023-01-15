@@ -1,7 +1,8 @@
 import { Component } from "@angular/core";
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from "src/app/modules/login/login.component";
-
+import { LoginService } from "src/app/shared/services/login.service";
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-header',
@@ -11,10 +12,14 @@ import { LoginComponent } from "src/app/modules/login/login.component";
 
 export class HeaderComponent{
 
-    constructor(private dialog:MatDialog){}
+    constructor(private dialog:MatDialog, public loginService: LoginService, private router: Router){}
 
     openDialogSesion(){
-        console.log('log')
         this.dialog.open(LoginComponent)
+    }
+
+    Salir(){
+        this.loginService.username = "";
+        this.router.navigate(['']);
     }
 }
