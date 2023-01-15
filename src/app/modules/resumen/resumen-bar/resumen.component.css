@@ -7,5 +7,11 @@ p{
 }
 button {
     margin: 10px;
-    margin-left: 400px;
+  }
+  #aceptar{
+    background-color: black;
+    color: aliceblue;
+  }
+  #medio{
+    margin-left: 950px;
   }
