@@ -35,3 +35,42 @@ a:hover {
 .iniciar:hover {
   background-color: #ffee00;
 }
+
+.logg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: fixed;
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+  }
+}
+
+.mat-drawer {
+  position: fixed;
+  width: 50%;
+  height: 10%;
+  z-index: 9;
+  top: 0;
+  left: 0;
+}
+
+.mat-drawer-content {
+  position: fixed;
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+}
