@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SnackBarServices } from 'src/app/shared/services/snack-bar.service';
 import { Router } from '@angular/router';
+import { SnackBars } from 'src/app/shared/interfaces/snack.interface';
+import { CarritoServices } from 'src/app/shared/services/carrito.service';
 
 @Component({
   selector: 'app-snack-bar',
@@ -11,7 +13,7 @@ export class SnackBarComponent implements OnInit {
 
   value: number[] = [];
 
-  constructor(private snackBarServices: SnackBarServices, private router:Router) {
+  constructor(private snackBarServices: SnackBarServices, private router:Router, public carrito:CarritoServices) {
    }
 
   get snackBar(){
@@ -24,7 +26,21 @@ export class SnackBarComponent implements OnInit {
     }
   }
 
-  adquirir(i: number, value:number, idprod:number){
+  adquirir(i: number, value:number, prod:SnackBars){
+    this.value[i] = this.value[i] + value;
+
+    if(this.value[i] > 10){
+      this.value[i]=10;
+      //console.log(idprod);
+    }
+
+    console.log(prod.nombre);
+    this.carrito.addCarrito(prod,this.value[i]);
+
+  }
+
+
+  quitar(i: number, value:number, prod:SnackBars){
     this.value[i] = this.value[i] + value;
 
     if(this.value[i] < 0){
@@ -32,12 +48,10 @@ export class SnackBarComponent implements OnInit {
       //console.log(idprod);
     }
 
-    if(this.value[i] > 10){
-      this.value[i]=10;
-      //console.log(idprod);
-    }
 
-    console.log(idprod);
+
+
+    console.log(prod.nombre);
 
 
   }

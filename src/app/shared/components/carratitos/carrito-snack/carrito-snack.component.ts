@@ -11,12 +11,16 @@ import { Router } from "@angular/router";
 })
 export class CarritoSnackComponent{
     hidden = false;
+    activo=false;
 
     toggleBadgeVisibility() {
     this.hidden = !this.hidden;
     }
 
-    constructor(private carritoServices: CarritoServices, public router:Router, private dialog:MatDialog){}
+    constructor(public carritoS: CarritoServices, public router:Router, private dialog:MatDialog){}
+
+
+
 
     fn(){
         this.router.navigate(['/resumen-bar'])
