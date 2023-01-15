@@ -24,16 +24,22 @@ export class SnackBarComponent implements OnInit {
     }
   }
 
-  adquirir(i: number, value:number){
+  adquirir(i: number, value:number, idprod:number){
     this.value[i] = this.value[i] + value;
 
     if(this.value[i] < 0){
       this.value[i]=0;
+      //console.log(idprod);
     }
 
     if(this.value[i] > 10){
       this.value[i]=10;
+      //console.log(idprod);
     }
+
+    console.log(idprod);
+
+
   }
 
 
