@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { MatPaginatedTabHeader } from "@angular/material/tabs/paginated-tab-header";
 
 @Injectable()
 export class CarritoServices{
@@ -7,11 +8,13 @@ export class CarritoServices{
      
     totalsn=0;
     xmap = new Map();
+    ymap= new Map();
 
     get carrito(){
         //console.log("Work");
        return []
     }
+
 
 
     addCarrito(p:any,cantidad: number){
