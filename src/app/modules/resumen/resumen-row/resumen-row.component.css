@@ -16,6 +16,12 @@
 
  .resume{
    display: block;
-   background-color: aqua;
+   background-color: rgb(255, 255, 255);
 
  }
+ .resume2{
+  display: block;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+
+}
