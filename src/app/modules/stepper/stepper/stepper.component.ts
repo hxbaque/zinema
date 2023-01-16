@@ -14,9 +14,6 @@ export class StepperComponent{
   fc="";
   puesto = "";
 
-  
-
-  
   constructor(private _formBuilder: FormBuilder, public carrito:CarritoServices
     ) {}
 
@@ -38,12 +35,6 @@ export class StepperComponent{
     this.fc=hora;
     console.log(this.fc)
   }
-
-
-
-
-
-
 
   selectedValue: string="0";
   selectedCar: string="0";

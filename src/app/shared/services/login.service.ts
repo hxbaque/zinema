@@ -5,4 +5,6 @@ import { Injectable } from "@angular/core";
 })
 export class LoginService{
     username: string = '';
+    password: string = '';
+    id_usuario: number = 0;
 }

@@ -1,8 +1,26 @@
 import { Component } from "@angular/core";
-
+import { Usuario } from "src/app/shared/interfaces/usuario.interface";
+import { LoginService } from "src/app/shared/services/login.service";
+import { UsuarioService } from "src/app/shared/services/usuario.service";
+import {Router} from '@angular/router';
 
 @Component({
     selector: '',
-    templateUrl: './perfil.component.html'
+    templateUrl: './perfil.component.html',
+    styleUrls: ['./perfil.component.css']
 })
-export class PerfilComponent{}
+export class PerfilComponent{
+
+    id = '';
+    constructor(private usuarioServices: UsuarioService, public loginService: LoginService, private router: Router){
+        this.id = localStorage.getItem('cedula') || '';
+    }
+
+    reservar(){
+        this.router.navigate(['/reservacion']);
+    }
+
+    get usuariosR(): Usuario[]{
+        return this.usuarioServices.usuariosR
+    }
+}

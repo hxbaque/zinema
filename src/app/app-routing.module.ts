@@ -12,6 +12,7 @@ import { AdinfoComponent } from "./modules/info/adinfo/adinfo.component";
 import { ResumenComponent } from "./modules/resumen/resumen-bar/resumen.component";
 import { ResumenRowComponent } from "./modules/resumen/resumen-row/resumen-row.component";
 import { PerfilComponent } from "./modules/perfil/perfil.component";
+import { ReservacionComponent } from "./modules/reservarcion/reservacion.component";
 
 const routes: Routes = [
     {path: '', component:HomeComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
     {path: 'info', component:AdinfoComponent},
     {path: 'resumen-bar', component:ResumenComponent},
     {path: 'resumen-row', component:ResumenRowComponent},
-    {path: 'perfil', component:PerfilComponent}
+    {path: 'perfil', component:PerfilComponent},
+    {path: 'reservacion', component:ReservacionComponent}
 ]
 
 
