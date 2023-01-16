@@ -10,16 +10,33 @@
     <mat-grid-tile><h4><mat-icon>calendar_today</mat-icon>FECHA:</h4></mat-grid-tile>
     <mat-grid-tile><p> {{datos[2]}}</p></mat-grid-tile>
     <mat-grid-tile> <h4> <mat-icon> local_activity</mat-icon>TARIFA/ENTRADAS:</h4></mat-grid-tile>
-    <mat-grid-tile><p> {{datos[1]}}</p></mat-grid-tile>
-    <mat-grid-tile><h4><mat-icon>event_seat</mat-icon>SILLAS:</h4></mat-grid-tile>
-    <mat-grid-tile><p> {{datos[4]}}</p></mat-grid-tile>
+    <mat-grid-tile  ><p>  {{datos[1]}}</p></mat-grid-tile>
     <mat-grid-tile><h4><mat-icon> local_offer</mat-icon>CANT. ENTRADAS:</h4></mat-grid-tile>
-    <mat-grid-tile><p> {{datos[3]}}</p></mat-grid-tile>
+    <mat-grid-tile><p> {{datos[3]}}</p></mat-grid-tile> 
+   <mat-grid-tile><h4><mat-icon>event_seat</mat-icon>SILLAS:</h4></mat-grid-tile>
+    <mat-grid-tile><p> {{datos[4]}}</p></mat-grid-tile>
   </mat-grid-list>
-    
-
+   
 </div>
+<br><br>
+        <h4><mat-icon> fastfood</mat-icon>SNACKBAR</h4> 
+      <div class="resume2">
+        <mat-grid-list cols="3" rowHeight="10">
+          <mat-grid-tile><p>Cantidad</p></mat-grid-tile>
+          <mat-grid-tile><p>Producto</p></mat-grid-tile>
+          <mat-grid-tile><p>Precio</p></mat-grid-tile>
+        </mat-grid-list>
 
-        <mat-icon> fastfood</mat-icon>SNACKBAR: <br><br>Nachos con queso Y Gaseosa<br><br>
-      
-      
+
+        <mat-grid-list cols="3" rowHeight="40" *ngFor="let item of carrito.xmap| keyvalue">
+          <mat-grid-tile><p>{{item.value}}x</p></mat-grid-tile>
+          <mat-grid-tile><p>{{item.key.nombre}}</p></mat-grid-tile>
+          <mat-grid-tile><p> ${{item.key.precio}}</p></mat-grid-tile>
+        </mat-grid-list>
+        
+        <mat-grid-list cols="3" rowHeight="10">
+          <mat-grid-tile><p>Total</p></mat-grid-tile>
+          <mat-grid-tile><p></p></mat-grid-tile>
+          <mat-grid-tile><p>{{total()}}</p></mat-grid-tile>
+        </mat-grid-list>
+      </div>
