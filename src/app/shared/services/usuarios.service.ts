@@ -5,7 +5,7 @@ import { users } from "../interfaces/usuario.interface";
 @Injectable()
 export class UsersServices{
     private _usuarios: users[] = [...usuarios_data];
-    get usuarios(): users[]{
+    get usuarioos(): users[]{
         return this._usuarios;
     }
 }

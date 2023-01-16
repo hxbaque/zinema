@@ -2,7 +2,9 @@ import { Component } from "@angular/core";
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Router} from '@angular/router';
+import { users } from "src/app/shared/interfaces/usuario.interface";
 import { LoginService } from "src/app/shared/services/login.service";
+import { UsersServices } from "src/app/shared/services/usuarios.service";
 
 @Component({
     selector: 'app-login',
@@ -11,7 +13,7 @@ import { LoginService } from "src/app/shared/services/login.service";
 
 })
 export class LoginComponent{
-    constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>, private loginSerice: LoginService) { }
+    constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>, private loginSerice: LoginService,private usersService: UsersServices) { }
 
   alert: boolean = false;
 
@@ -19,18 +21,23 @@ export class LoginComponent{
     usuario: new FormControl('',Validators.required),
     password: new FormControl('', Validators.required)
   })
-
+  get usuario(){
+    return this.usersService.usuarioos;
+   }
   onSubmit(){
 
-    if (this.usuarioLogin.value.usuario=="mauro" && this.usuarioLogin.value.password=="123"){
-      this.loginSerice.username = this.usuarioLogin.value.usuario;
-      this.router.navigate(['']);
-      this.dialogRef.close();
+    for (let i =0;i <this.usuario.length;i++){
+      if(this.usuarioLogin.value.usuario==this.usuario[i].usuario && this.usuarioLogin.value.password==this.usuario[i].password){
+        this.loginSerice.username = this.usuarioLogin.value.usuario;
+        this.router.navigate(['']);
+        this.dialogRef.close();
+      }else{
+        this.alert = true;
+        setTimeout(() => this.alert=false, 4000);
+      }
     }
-    else{
-      this.alert = true;
-      setTimeout(() => this.alert=false, 4000);
-    }
+    
+    
 
   }
 }

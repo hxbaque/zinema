@@ -29,11 +29,11 @@ a,
 }
 
 a:hover {
-  color: #ffee00;
+  color: #4010eb;
 }
 
 .iniciar:hover {
-  background-color: #ffee00;
+  background-color: #4010eb;
 }
 
 .logg {
@@ -72,5 +72,5 @@ a:hover {
   position: fixed;
   width: 10rem;
   height: 10rem;
-  background-color: red;
+  background-color: rgb(12, 230, 193);
 }

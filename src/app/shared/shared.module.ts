@@ -14,6 +14,7 @@ import { CarritoSnackComponent } from "./components/carratitos/carrito-snack/car
 import { CarritoServices } from "./services/carrito.service";
 import { SnackRowComponent } from "./components/snacks/snack-row/snack-row.component";
 import { LoginService } from "./services/login.service";
+import { UsersServices } from "./services/usuarios.service";
 
 @NgModule({
     declarations: [
@@ -42,7 +43,8 @@ import { LoginService } from "./services/login.service";
         PeliculasServices,
         SnackBarServices,
         CarritoServices,
-        LoginService
+        LoginService,
+        UsersServices
     ]
 })
 

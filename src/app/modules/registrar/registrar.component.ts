@@ -1,9 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
-import { concat } from "rxjs";
 import {users} from "src/app/shared/interfaces/usuario.interface"
 import { Router} from '@angular/router';
-
+import { UsersServices } from "src/app/shared/services/usuarios.service";
 
 @Component({
     selector :'app-registrar',
@@ -14,7 +13,7 @@ import { Router} from '@angular/router';
 
 export class RegistrarComponent implements OnInit{
     
-  
+        
         emailFormControl = new FormControl('', [Validators.required, Validators.email]);
         telfFormControl= new FormControl('',Validators.required);
         nombresFormControl= new FormControl('',Validators.required);
@@ -25,17 +24,12 @@ export class RegistrarComponent implements OnInit{
         passwordFormControl= new FormControl('', Validators.required);
         passwordrepeatFormControl= new FormControl('', Validators.required);
         usernameFormControl= new FormControl('', Validators.required);
-        constructor(private routes: Router) {}
+        constructor(private usersService: UsersServices, private routes: Router) {}
 
+        get usuario(){
+           return this.usersService.usuarioos;
+          }
         
-        usuarios: { cedula: number,
-            telefono: number,
-            nombres: string,
-            ciudad: string,
-            dirrecion: string,
-            usuario: string,
-            email: string,
-            password: string, }[]=[];
 
   
 
@@ -44,6 +38,7 @@ export class RegistrarComponent implements OnInit{
     }
     Submit(): void {
         const user : users={
+            id_user: 0,
             cedula: 0,
             telefono: 0,
             nombres: "",
@@ -62,9 +57,9 @@ export class RegistrarComponent implements OnInit{
         user.usuario=String(this.usernameFormControl.value);
         user.email=String(this.emailFormControl.value);
         user.password=String(this.passwordFormControl.value);
-        console.log(user);
-        this.usuarios.push(user);
-        console.log(this.usuarios);
+        user.id_user=this.usuario.length;
+        this.usuario.push(user);
+        console.log(this.usuario);
         this.routes.navigate(['']);
 
     }

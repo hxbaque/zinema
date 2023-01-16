@@ -18,6 +18,7 @@ import { ResumenRowComponent } from './resumen/resumen-row/resumen-row.component
 import { PromDialogComponent } from "./promociones/prom-dialog/prom-dialog.component";
 import { PromDialogSecComponent} from "./promociones/prom-dialog-sec/prom-dialog-sec.component";
 import { PromocionesComponent} from "./promociones/promociones/promociones.component";
+import { UserprofileComponent } from './userprofile/userprofile.component';
 
 
 
@@ -42,7 +43,9 @@ import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
         PromocionesComponent,
         PromDialogComponent,
         PromDialogSecComponent,
-        PromocionesComponent
+        PromocionesComponent,
+        UserprofileComponent,
+        
     ],
     exports: [
         HomeComponent,

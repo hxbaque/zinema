@@ -17,7 +17,9 @@ export class HeaderComponent{
     openDialogSesion(){
         this.dialog.open(LoginComponent)
     }
-
+    perfil(){
+        this.router.navigate(['/mi-cuenta']);
+    }
     Salir(){
         this.loginService.username = "";
         this.router.navigate(['']);
