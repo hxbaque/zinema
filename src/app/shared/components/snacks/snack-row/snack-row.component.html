@@ -9,7 +9,7 @@
                 <img class="img" src="{{data.img}}" alt="peli">
                 <p>${{data.precio}}.00</p>
                 <mat-card-actions class="count">
-                    <button (click)="adquirir(i, -1)" mat-mini-fab color="accent">
+                    <button (click)="quitar(i, -1,data)" mat-mini-fab color="accent">
                         <mat-icon>remove</mat-icon>
                     </button>
                     <mat-form-field class="example-form-field" style="margin: 0 1rem;">
@@ -19,7 +19,7 @@
                             <mat-icon>close</mat-icon>
                         </button>
                     </mat-form-field>
-                    <button (click)="adquirir(i, 1)" mat-mini-fab color="accent">
+                    <button (click)="adquirir(i, 1,data)" mat-mini-fab color="accent">
                         <mat-icon>add</mat-icon>
                     </button>
                 </mat-card-actions>
