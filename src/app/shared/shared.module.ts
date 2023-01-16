@@ -16,6 +16,7 @@ import { SnackRowComponent } from "./components/snacks/snack-row/snack-row.compo
 import { LoginService } from "./services/login.service";
 import { UsuarioService } from "./services/usuario.service";
 
+
 @NgModule({
     declarations: [
         PeliculasEstrenoComponent,
@@ -24,7 +25,8 @@ import { UsuarioService } from "./services/usuario.service";
         PeliculasProximamenteComponent,
         SnackBarComponent,
         SnackRowComponent,
-        CarritoSnackComponent
+        CarritoSnackComponent,
+       
     ],
     exports: [
         PeliculasEstrenoComponent,
@@ -33,7 +35,8 @@ import { UsuarioService } from "./services/usuario.service";
         PeliculasProximamenteComponent,
         SnackBarComponent,
         SnackRowComponent,
-        CarritoSnackComponent
+        CarritoSnackComponent,
+        
     ],
     imports:[
         MaterialModule,

@@ -9,8 +9,10 @@
     width: 50rem;
     margin: 0.5rem 1rem;
   }
-  p{
-    font-size: 12px;
+
+
+  .font{
+    font: size 8px;
   }
 
 
@@ -24,4 +26,10 @@
   background-color: rgb(255, 255, 255);
   height: auto;
 
+}
+
+@media (min-width: 768px) {
+  .font {
+    font: size 8px;
+  }
 }

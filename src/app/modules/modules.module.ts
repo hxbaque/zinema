@@ -24,6 +24,7 @@ import { ExinfoRowComponent } from './info/exinfo-row/exinfo-row.component';
 import { PerfilComponent } from "./perfil/perfil.component";
 import { ReservacionComponent } from "./reservarcion/reservacion.component";
 
+
 @NgModule({
     declarations: [
         HomeComponent,
@@ -44,7 +45,9 @@ import { ReservacionComponent } from "./reservarcion/reservacion.component";
         PromDialogSecComponent,
         PromocionesComponent,
         PerfilComponent,
-        ReservacionComponent
+        ReservacionComponent,
+        
+        
     ],
     exports: [
         HomeComponent,
@@ -56,6 +59,7 @@ import { ReservacionComponent } from "./reservarcion/reservacion.component";
         SharedModule,
         MaterialModule,
         CommonModule,
+        
 
     ]
 })
