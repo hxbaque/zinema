@@ -12,6 +12,10 @@
   p{
     font-size: 12px;
   }
+
+
  .resume{
-  
+   display: block;
+   background-color: aqua;
+
  }
