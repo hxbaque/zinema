@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { Component ,Input} from '@angular/core';
 
 @Component({
   selector: 'app-resumen-row',
   templateUrl: './resumen-row.component.html',
   styleUrls: ['./resumen-row.component.css']
 })
+
+
+
 export class ResumenRowComponent {
+
+@Input()datos:any[]=[];
+
+
+
+
 
 }

@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import {FormBuilder, FormGroup,Validators} from '@angular/forms';
 import { CarritoServices } from 'src/app/shared/services/carrito.service';
 
@@ -13,7 +13,12 @@ export class StepperComponent{
   pageIndex=0;
   fc="";
   puesto = "";
+  
 
+  @Input() movie:any;
+  
+pass:any[]=[];
+  
   constructor(private _formBuilder: FormBuilder, public carrito:CarritoServices
     ) {}
 
@@ -26,14 +31,26 @@ export class StepperComponent{
   
   aciento(p: string){
     this.puesto = p;
-    
-    console.log(this.puesto);
+    this.pass.push(this.movie.titulo_original); //pelicula nombre
+    this.pass.push(this.movie.precio);          // precio 
+    this.pass.push(this.fc);                    // fecha 
+    this.pass.push(this.secondFormGroup.get('secondCtrl')?.value); // cantidad de asiento 
+    this.pass.push(this.puesto);                                   // id asiento 
+    /*console.log(this.puesto);
     console.log("cantidad:"+this.secondFormGroup.get('secondCtrl')?.value);
+    console.log(this.movie.titulo_original);*/
+    console.log("nombre "+this.pass[0]);
   }
+
+
+
+
+
+
 
   val(hora: string){
     this.fc=hora;
-    console.log(this.fc)
+   // console.log(this.fc)
   }
 
   selectedValue: string="0";
