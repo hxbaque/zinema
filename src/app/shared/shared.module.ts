@@ -15,7 +15,7 @@ import { CarritoServices } from "./services/carrito.service";
 import { SnackRowComponent } from "./components/snacks/snack-row/snack-row.component";
 import { LoginService } from "./services/login.service";
 import { UsuarioService } from "./services/usuario.service";
-
+import { CardspayComponent } from "./components/cardspay/cardspay.component";
 
 @NgModule({
     declarations: [
@@ -26,6 +26,7 @@ import { UsuarioService } from "./services/usuario.service";
         SnackBarComponent,
         SnackRowComponent,
         CarritoSnackComponent,
+        CardspayComponent
        
     ],
     exports: [
@@ -36,6 +37,7 @@ import { UsuarioService } from "./services/usuario.service";
         SnackBarComponent,
         SnackRowComponent,
         CarritoSnackComponent,
+        CardspayComponent
         
     ],
     imports:[

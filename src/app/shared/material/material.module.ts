@@ -25,6 +25,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 
@@ -59,7 +60,8 @@ const MaterialComponents = [
   MatMenuModule,
   MatSortModule,
   MatDialogModule,
-  MatTabsModule
+  MatTabsModule,
+  MatRadioModule
 ];
 @NgModule({
   exports: [MaterialComponents],
