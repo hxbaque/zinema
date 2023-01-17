@@ -29,6 +29,7 @@ export class LoginComponent{
     for (let i =0;i <this.usuario.length;i++){
       if(this.usuarioLogin.value.usuario==this.usuario[i].usuario && this.usuarioLogin.value.password==this.usuario[i].password){
         this.loginSerice.username = this.usuarioLogin.value.usuario;
+        localStorage.setItem('usuario', this.usuarioLogin.value.usuario);
         this.router.navigate(['']);
         this.dialogRef.close();
       }else{

@@ -7,7 +7,7 @@
     <a class="example-spacer" mat-button href="/snack-bar">SnackBar</a>
     <a class="example-spacer" mat-button href="/promociones">Promociones</a>
 
-    <button mat-raised-button (click)="openDialogSesion()" *ngIf="loginService.username.length==0">Iniciar Sesion</button>
+    <button mat-fab (click)="openDialogSesion()" *ngIf="loginService.username.length==0"><mat-icon>account_circle</mat-icon>Login</button>
 
     <button class="logg" mat-raised-button [matMenuTriggerFor]="menu" *ngIf="loginService.username.length>0" id="user">
         <mat-icon>account_circle</mat-icon> Bienvenido {{loginService.username}}</button>

@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from "src/app/modules/login/login.component";
 import { LoginService } from "src/app/shared/services/login.service";
@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
     styleUrls: ['./header.component.css']
 })
 
-export class HeaderComponent{
+export class HeaderComponent implements OnInit{
 
     constructor(private dialog:MatDialog, public loginService: LoginService, private router: Router){}
 
@@ -21,8 +21,12 @@ export class HeaderComponent{
         this.router.navigate(['/mi-cuenta']);
     }
     Salir(){
+        localStorage.removeItem('usuario');
         this.loginService.username = "";
         this.router.navigate(['']);
+    }
+    ngOnInit(): void {
+        this.loginService.username = localStorage.getItem('usuario') || '';
     }
     
 }
