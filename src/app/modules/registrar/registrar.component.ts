@@ -39,7 +39,7 @@ export class RegistrarComponent implements OnInit{
     Submit(): void {
         const user : users={
             id_user: 0,
-            cedula: 0,
+            cedula: "",
             telefono: 0,
             nombres: "",
             ciudad: "",
@@ -49,7 +49,7 @@ export class RegistrarComponent implements OnInit{
             password: "",
         }
 
-        user.cedula=Number(this.cedulaFormControl.value);
+        user.cedula=String(this.cedulaFormControl.value);
         user.telefono=Number(this.telfFormControl.value);
         user.nombres=String(this.nombresFormControl.value).concat(String(this.apellidosFormControl.value));
         user.ciudad=String(this.ciudadFormControl.value);

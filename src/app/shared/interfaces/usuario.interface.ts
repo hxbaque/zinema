@@ -1,6 +1,6 @@
 export interface users{
   id_user:number,
-  cedula: number,
+  cedula: string,
   telefono: number,
   nombres: string,
   ciudad: string,

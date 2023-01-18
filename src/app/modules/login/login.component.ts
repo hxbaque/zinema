@@ -24,6 +24,8 @@ export class LoginComponent{
   get usuario(){
     return this.usersService.usuarioos;
    }
+
+
   onSubmit(){
 
     for (let i =0;i <this.usuario.length;i++){
